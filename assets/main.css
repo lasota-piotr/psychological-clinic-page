@@ -1583,6 +1583,28 @@ table {
   height: 96px; }
 
 /* ==========================================================================
+   #CTA
+   ========================================================================== */
+/**
+ * Call to action component
+ */
+.c-cta {
+  background-color: #e6e6e6; }
+
+.c-cta__content {
+  text-align: center;
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto; }
+
+.c-cta__header {
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 1.6;
+  font-weight: 400;
+  text-align: center; }
+
+/* ==========================================================================
    #CLEARFIX
    ========================================================================== */
 /**
