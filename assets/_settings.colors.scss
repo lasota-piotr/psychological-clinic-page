@@ -5,7 +5,7 @@
 
 $color-brand:            #45d9fd;
 $color-brand--light:     lighten($color-brand, 15%);
-$color-brand--dark:      darken($color-brand, 10%);
+$color-brand--dark:      darken($color-brand, 30%);
 
 $color-accent:           #ee2560;
 $color-accent--dark:     darken($color-accent, 15%);
@@ -42,3 +42,13 @@ $color-link--hover:  $color-brand--light;
 
 // Icons
 $color-icon:         $color-gray;
+
+// Panels
+$color-panel-background--light:      $color-gray--very-light;
+
+$color-panel-background--very-light: #fff;
+
+$color-panel-background--dark:       $color-gray--dark;
+$color-panel--dark:                  #fff;
+
+$color-panel-background--attention:  $color-brand--light;
