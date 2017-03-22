@@ -49,3 +49,8 @@ $inuit-wrapper-width: 1200px !default;
   padding-right: $inuit-global-spacing-unit-huge;
   padding-left:  $inuit-global-spacing-unit-huge;
 }
+
+.o-wrapper--flush {
+  padding-right: 0;
+  padding-left:  0;
+}
