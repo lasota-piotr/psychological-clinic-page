@@ -6,11 +6,6 @@
 .c-panel {
   padding-top: $unit;
   padding-bottom: $unit;
-
-  @include mq($from: tablet) {
-    padding-top: $unit-large;
-    padding-bottom: $unit-large;
-  }
 }
 
 
@@ -20,11 +15,29 @@
 /* Size variants
    ========================================================================== */
 
+ .c-panel--flush {
+   padding-top: 0;
+   padding-bottom: 0;
+ }
+
+ .c-panel--flush\@tablet {
+   @include mq($from: tablet) {
+     padding-top: 0;
+     padding-bottom: 0;
+   }
+ }
+
  .c-panel--large {
    padding-top: $unit-large;
    padding-bottom: $unit-large;
  }
 
+ .c-panel--large\@tablet {
+   @include mq($from: tablet) {
+     padding-top: $unit-large;
+     padding-bottom: $unit-large;
+   }
+ }
 
 
 
