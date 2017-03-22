@@ -52,8 +52,9 @@
 
 		<h1><a href="/">Świętokrzyski Ośrodek Terapii</a></h1>
 
-		<nav class="c-site-nav" data-ui-component="Main navigation">
-			<a class="c-site-nav__open-btn"></a>
+		<!-- https://csswizardry.com/2015/06/contextual-styling-ui-components-nesting-and-implementation-detail/ -->
+		<nav class="c-nav-primary" data-ui-component="Main navigation">
+			<a class="c-nav-primary__open-btn"></a>
 
 			<ul class="o-list-inline">
 				<li class="o-list-inline__item"><a href="/">Strona główna</a></li>
@@ -88,7 +89,7 @@
 		</article>
 
 
-		<div class="c-panel c-panel--very-light">
+		<div class="c-panel c-panel--large@tablet c-panel--very-light">
 
 			<div class="o-wrapper">
 
@@ -157,7 +158,8 @@
 		</div>
 
 
-		<section class="c-panel c-panel--light"  data-ui-component="Call To Action">
+		<section class="c-panel c-panel--large c-panel--light"
+			data-ui-component="Call To Action">
 
 			<div class="o-wrapper">
 
@@ -183,24 +185,34 @@
 		</section>
 
 
-		<div class="o-wrapper">
+		<div class="c-panel c-panel--flush">
 
-			<article class="o-layout">
+			<div class="o-wrapper o-wrapper--flush">
 
-				<div class="o-layout__item u-1/1 u-1/2@tablet"></div>
+				<article class="o-layout o-layout--middle c-our-team">
 
-				<div class="o-layout__item u-1/1 u-1/2@tablet">
-					<h3>Nasz zespół</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsam ratione aut omnis voluptate non atque temporibus deserunt aliquam maiores nesciunt magnam unde veniam asperiores est dolores dolorum cumque, id.</p>
-					<a href="#" class="c-btn c-btn--primary c-btn--ghost">
-						Zobacz caly zesół
-					</a>
-				</div>
+					<div class="o-layout__item u-1/1 u-1/2@tablet">
+						<div class="c-our-team__image" style="height: 400px;"></div>
+					</div>
 
-			</aritcle>
+					<div class="o-layout__item
+											u-1/1 u-1/2@tablet
+											u-text-center u-text-left@tablet">
+							<div class="o-box">
+							<h3>Nasz zespół</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsam ratione aut omnis voluptate non atque temporibus deserunt aliquam maiores nesciunt magnam unde veniam asperiores est dolores dolorum cumque, id.</p>
+							<a href="#" class="c-btn c-btn--primary c-btn--ghost">
+								Zobacz cały zespół
+							</a>
+							</div>
+
+					</div>
+
+				</aritcle>
+
+			</div>
 
 		</div>
-
 
 	</main>
 
