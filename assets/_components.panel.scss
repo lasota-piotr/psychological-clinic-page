@@ -1,0 +1,50 @@
+/* ==========================================================================
+   #PANEL
+   ========================================================================== */
+
+
+.c-panel {
+  padding-top: $unit;
+  padding-bottom: $unit;
+
+  @include mq($from: tablet) {
+    padding-top: $unit-large;
+    padding-bottom: $unit-large;
+  }
+}
+
+
+
+
+
+/* Size variants
+   ========================================================================== */
+
+ .c-panel--large {
+   padding-top: $unit-large;
+   padding-bottom: $unit-large;
+ }
+
+
+
+
+
+/* Color variants
+   ========================================================================== */
+
+.c-panel--light {
+  background-color: $color-panel-background--light;
+}
+
+.c-panel--very-light {
+  background-color: $color-panel-background--very-light;
+}
+
+.c-panel--dark {
+  background-color: $color-panel-background--dark;
+  color: $color-panel--dark;
+}
+
+.c-panel--attention {
+  background-color: $color-panel-background--attention;
+}
