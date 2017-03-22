@@ -2,11 +2,14 @@
    #HERO
    ========================================================================== */
 
+// TODO:
+// https://csswizardry.com/2016/10/improving-perceived-performance-with-multiple-background-images/
+
 $color-hero-text: $color-gray--dark;
 
 .c-hero {
   width: 100%;
-  background-color: $color-brand--light;
+  background-color: $color-gray--light;
   background-image: url(images/hero-2.jpg);
   background-repeat: no-repeat;
   background-position: center;
