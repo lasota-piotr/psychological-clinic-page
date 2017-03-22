@@ -1,0 +1,45 @@
+/* ==========================================================================
+   #TYPE
+   ========================================================================== */
+
+
+
+
+/* Text center
+  ========================================================================== */
+
+.u-text-center {
+  text-align: center !important;
+}
+
+.u-text-center\@tablet {
+  @include mq($from: tablet) {
+    text-align: center !important;
+  }
+}
+
+.u-text-center\@desktop {
+  @include mq($from: desktop) {
+    text-align: center !important;
+  }
+}
+
+
+/* Text left
+  ========================================================================== */
+
+.u-text-left {
+  text-align: left !important;
+}
+
+.u-text-left\@tablet {
+  @include mq($from: tablet) {
+    text-align: left !important;
+  }
+}
+
+.u-text-left\@desktop {
+  @include mq($from: desktop) {
+    text-align: left !important;
+  }
+}
