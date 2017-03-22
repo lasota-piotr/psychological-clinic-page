@@ -703,6 +703,10 @@ table {
   padding-right: 96px;
   padding-left: 96px; }
 
+.o-wrapper--flush {
+  padding-right: 0;
+  padding-left: 0; }
+
 /* ==========================================================================
    #LAYOUT
    ========================================================================== */
@@ -1608,16 +1612,26 @@ table {
 .c-panel {
   padding-top: 24px;
   padding-bottom: 24px; }
-  @media (min-width: 46.25em) {
-    .c-panel {
-      padding-top: 48px;
-      padding-bottom: 48px; } }
 
 /* Size variants
    ========================================================================== */
+.c-panel--flush {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+@media (min-width: 46.25em) {
+  .c-panel--flush\@tablet {
+    padding-top: 0;
+    padding-bottom: 0; } }
+
 .c-panel--large {
   padding-top: 48px;
   padding-bottom: 48px; }
+
+@media (min-width: 46.25em) {
+  .c-panel--large\@tablet {
+    padding-top: 48px;
+    padding-bottom: 48px; } }
 
 /* Color variants
    ========================================================================== */
@@ -1633,6 +1647,14 @@ table {
 
 .c-panel--attention {
   background-color: #91e8fe; }
+
+/* ==========================================================================
+   #OUR TEAM
+   ========================================================================== */
+.c-our-team__image {
+  background-image: url("images/our-team.jpeg");
+  background-position: center;
+  background-size: cover; }
 
 /* ==========================================================================
    #CLEARFIX
@@ -3467,3 +3489,32 @@ table {
  */
 .u-hidden {
   display: none !important; }
+
+/* ==========================================================================
+   #TYPE
+   ========================================================================== */
+/* Text center
+  ========================================================================== */
+.u-text-center {
+  text-align: center !important; }
+
+@media (min-width: 46.25em) {
+  .u-text-center\@tablet {
+    text-align: center !important; } }
+
+@media (min-width: 61.25em) {
+  .u-text-center\@desktop {
+    text-align: center !important; } }
+
+/* Text left
+  ========================================================================== */
+.u-text-left {
+  text-align: left !important; }
+
+@media (min-width: 46.25em) {
+  .u-text-left\@tablet {
+    text-align: left !important; } }
+
+@media (min-width: 61.25em) {
+  .u-text-left\@desktop {
+    text-align: left !important; } }
