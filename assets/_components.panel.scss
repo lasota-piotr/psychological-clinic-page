@@ -27,6 +27,18 @@
    }
  }
 
+ .c-panel--small {
+   padding-top: $unit-small;
+   padding-bottom: $unit-small;
+ }
+
+ .c-panel--small\@tablet {
+   @include mq($from: tablet) {
+     padding-top: $unit-small;
+     padding-bottom: $unit-small;
+   }
+ }
+
  .c-panel--large {
    padding-top: $unit-large;
    padding-bottom: $unit-large;
