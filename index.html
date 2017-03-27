@@ -50,19 +50,73 @@
 
   <header class="c-page-head">
 
-    <h1><a href="/">Świętokrzyski Ośrodek Terapii</a></h1>
-
     <!-- https://csswizardry.com/2015/06/contextual-styling-ui-components-nesting-and-implementation-detail/ -->
-    <nav class="c-nav-primary" data-ui-component="Main navigation">
-      <a class="c-nav-primary__open-btn"></a>
+    <div class="o-wrapper">
 
-      <ul class="o-list-inline">
-        <li class="o-list-inline__item"><a href="/">Strona główna</a></li>
-        <li class="o-list-inline__item"><a href="o-nas.html">O nas</a></li>
-        <li class="o-list-inline__item"><a href="kontakt.html">Kontakt</a></li>
-      </ul>
+      <nav class="c-nav-primary js-nav-primary"
+        data-ui-component="Main navigation">
 
-    </nav>
+        <h1 class="c-nav-primary__logo">
+          <a href="/" class="c-nav-primary__logo-text">
+            Świętokrzyski<br> Ośrodek Terapii
+          </a>
+        </h1>
+
+        <ul class="c-nav-primary__list  o-list-bare">
+
+          <li class="c-nav-primary__menu-btn js-nav-primary__menu-btn">
+            <button class="c-nav-primary__menu-btn-icon">X</button>
+          </li>
+
+          <li class="c-nav-primary__item">
+            <a href="/" class="c-nav-primary__link c-nav-primary__link--active">
+              Strona główna
+            </a>
+          </li>
+
+          <li class="c-nav-primary__item">
+            <a href="Poradnie" class="c-nav-primary__link">Poradnie</a>
+            <ul class="c-nav-primary__sub-list o-list-bare">
+              <li class="c-nav-primary__item">
+                <a href="#" class="c-nav-primary__sub-link">
+                  Poradnia zdrowia psychicznego
+                </a>
+              </li>
+              <li class="c-nav-primary__item">
+                <a href="#" class="c-nav-primary__sub-link">
+                  Poradnia psychologiczna
+                </a>
+              </li>
+              <li class="c-nav-primary__item">
+                <a href="#" class="c-nav-primary__sub-link">
+                  Poradnia uzależnień
+                </a>
+              </li>
+              <li class="c-nav-primary__item">
+                <a href="#" class="c-nav-primary__sub-link">
+                  Zespół leczenia środowiskowego
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="c-nav-primary__item">
+            <a href="#" class="c-nav-primary__link">Specjaliści</a>
+          </li>
+
+          <li class="c-nav-primary__item">
+            <a href="o-nas.html" class="c-nav-primary__link">O nas</a>
+          </li>
+
+          <li class="c-nav-primary__item">
+            <a href="kontakt.html" class="c-nav-primary__link">Kontakt</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
 
   </header>
 
@@ -305,9 +359,6 @@
 
   </footer>
 
-<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write("<script src='assets/js/libs/jquery-1.11.3.min.js'>\x3C/script>")</script> -->
 
 <!-- this is where we put our custom functions -->
 <!-- don't forget to concatenate and minify for production -->

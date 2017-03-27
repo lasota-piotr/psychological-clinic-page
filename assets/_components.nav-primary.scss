@@ -1,0 +1,124 @@
+/* ==========================================================================
+   #NAV-PRIMARY
+   ========================================================================== */
+
+$nav-primary-element-height: 64px;
+
+.c-nav-primary {
+
+}
+
+  .c-nav-primary__logo {
+    line-height: 20px;
+    float: left;
+  }
+
+  .c-nav-primary__logo-text {
+    @include font-size(20px);
+    padding-top: $unit;
+    padding-bottom: $unit;
+  }
+
+  .c-nav-primary__list {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 1;
+    transform: translateX(100%);
+    min-width: 14rem;
+    padding-top: $unit;
+    background-color: $color-primary-nav-background;
+    max-width: 80%;
+
+    .is-open > & {
+      transform: none;
+    }
+
+    @include mq($from: tablet) {
+      position: static;
+      transform: none;
+      float: right;
+      display: flex;
+      padding-top: 0;
+      background-color: transparent;
+      max-width: none;
+    }
+  }
+
+  .c-nav-primary__menu-btn {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+
+    @include mq($from: tablet) {
+      display: none;
+    }
+  }
+
+  .c-nav-primary__item {
+    position: relative;
+  }
+
+
+  .c-nav-primary__link {
+    display: block;
+    padding: $unit-tiny $unit;
+    @include font-size(18px);
+    color: #fff;
+
+    @include mq($from: tablet) {
+      line-height: $nav-primary-element-height;
+      padding-left: $unit-small;
+      padding-right: $unit-small;
+      color: $color-primary-nav-wide-text;
+    }
+  }
+
+  .c-nav-primary__link--active {
+    text-decoration: underline;
+  }
+
+
+
+
+
+
+
+/* Sub-list menu
+   ========================================================================== */
+
+  .c-nav-primary__sub-list {
+    padding-left: $unit;
+
+
+    @include mq($from: tablet) {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      opacity: 0;
+      visibility: hidden;
+      padding: $unit-small $unit-tiny;
+      background-color: $color-primary-nav-background;
+      border-radius: $global-radius;
+      text-align: center;
+    }
+
+    .c-nav-primary__item:hover > & {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .c-nav-primary__sub-link {
+    display: block;
+    padding: $unit-tiny $unit;
+    @include font-size(16px);
+    color: #fff;
+
+    @include mq($from: tablet) {
+      white-space: nowrap;
+    }
+  }
