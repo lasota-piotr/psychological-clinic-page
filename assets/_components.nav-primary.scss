@@ -2,43 +2,48 @@
    #NAV-PRIMARY
    ========================================================================== */
 
-$nav-primary-element-height: 64px;
+$nav-primary-element-height: 30px;
 
 .c-nav-primary {
-
+  display: flex;
+  align-items: center;
+  padding-top: $unit;
+  padding-bottom: $unit;
 }
 
   .c-nav-primary__logo {
     line-height: 20px;
-    float: left;
+    margin: 0;
+    margin-right: auto;
+
   }
 
   .c-nav-primary__logo-text {
     @include font-size(20px);
-    padding-top: $unit;
-    padding-bottom: $unit;
   }
 
   .c-nav-primary__list {
-    position: fixed;
+    position: absolute;
+    margin: 0;
     top: 0;
     right: 0;
     height: 100%;
     z-index: 1;
     transform: translateX(100%);
-    min-width: 14rem;
+    transition: $global-transition;
     padding-top: $unit;
     background-color: $color-primary-nav-background;
     max-width: 80%;
 
     .is-open > & {
+      position: fixed;
       transform: none;
     }
 
     @include mq($from: tablet) {
       position: static;
       transform: none;
-      float: right;
+      margin-left: auto;
       display: flex;
       padding-top: 0;
       background-color: transparent;
@@ -46,13 +51,42 @@ $nav-primary-element-height: 64px;
     }
   }
 
-  .c-nav-primary__menu-btn {
+  .c-nav-primary__menu-btn-wrapper {
     position: absolute;
     left: 0;
-    transform: translateX(-100%);
+    top: $unit;
+    transform: translateX(-140%);
+    transition: transform 0.1s;
+    transition-delay: 0.1s;
+
+    .is-open & {
+      transform: translateX(-90%);
+    }
 
     @include mq($from: tablet) {
       display: none;
+    }
+  }
+
+  .c-nav-primary__menu-btn {
+    color: $color-primary-nav-wide-text;
+    border: 2px solid currentColor; // TODO: change to $btn-ghost-border-width
+
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      background: none;
+    }
+
+    .is-open & {
+      color: #fff;
+      background-color: $color-primary-nav-background;
+      border-color: $color-primary-nav-background;
+    }
+
+    &:focus {
+      outline: none;
     }
   }
 
