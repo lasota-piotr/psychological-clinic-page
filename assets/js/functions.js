@@ -1,6 +1,9 @@
 (function() {
   'use strict';
 
+  /* Primary-nav menu
+    ========================================================================= */
+
   const menuBtn = document.querySelector('.js-nav-primary__menu-btn-wrapper');
   const navPrimary = document.querySelector('.js-nav-primary');
 
@@ -21,7 +24,5 @@
     e.stopPropagation();
   });
   document.addEventListener('click', documentClickHandler);
-
-  console.log();
 
 }());

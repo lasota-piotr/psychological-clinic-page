@@ -1708,8 +1708,8 @@ a {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px; }
+  padding-top: 12px;
+  padding-bottom: 12px; }
 
 .c-nav-primary__logo {
   line-height: 20px;
@@ -1722,12 +1722,11 @@ a {
   line-height: 1.2; }
 
 .c-nav-primary__list {
-  position: absolute;
+  position: fixed;
   margin: 0;
   top: 0;
   right: 0;
   height: 100%;
-  z-index: 1;
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
           transform: translateX(100%);
@@ -1737,7 +1736,6 @@ a {
   background-color: #262626;
   max-width: 80%; }
   .is-open > .c-nav-primary__list {
-    position: fixed;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none; }
@@ -1768,9 +1766,9 @@ a {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s; }
   .is-open .c-nav-primary__menu-btn-wrapper {
-    -webkit-transform: translateX(-90%);
-        -ms-transform: translateX(-90%);
-            transform: translateX(-90%); }
+    -webkit-transform: translateX(-95%);
+        -ms-transform: translateX(-95%);
+            transform: translateX(-95%); }
   @media (min-width: 46.25em) {
     .c-nav-primary__menu-btn-wrapper {
       display: none; } }
@@ -1842,9 +1840,23 @@ a {
       white-space: nowrap; } }
 
 /* ==========================================================================
+   #PAGE-HEAD
+   ========================================================================== */
+.c-page-head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #e6e6e6; }
+
+/* ==========================================================================
    #HAMBURGER
    ========================================================================== */
 /**
+ * Animated hamburger icon for toggle button.
+ *
  * 1. Draws horizontal line.
  */
 /**
@@ -1861,8 +1873,15 @@ a {
   /* [1] */
   border: none;
   position: relative;
-  border-top: 0.125em solid currentColor
-  /* [1] */ }
+  border-top: 0.125em solid currentColor;
+  /* [1] */
+  -webkit-transition: -webkit-transform 0.5s ease-out;
+          transition: transform 0.5s ease-out; }
+  .is-open .c-hamburger {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    border: none; }
   .c-hamburger::before {
     border-top: 0.125em solid currentColor;
     /* [1] */
@@ -1883,7 +1902,13 @@ a {
     position: absolute;
     left: 0;
     width: 100%;
-    bottom: 0; }
+    bottom: 0;
+    -webkit-transition: -webkit-transform 0.5s ease-out;
+            transition: transform 0.5s ease-out; }
+    .is-open .c-hamburger::after {
+      -webkit-transform: rotate(-90deg) translateX(0.45em);
+          -ms-transform: rotate(-90deg) translateX(0.45em);
+              transform: rotate(-90deg) translateX(0.45em); }
 
 /* ==========================================================================
    #CLEARFIX
