@@ -3,6 +3,8 @@
    ========================================================================== */
 
 /**
+ * Animated hamburger icon for toggle button.
+ *
  * 1. Draws horizontal line.
  */
 @mixin hamburger-line() {
@@ -16,10 +18,16 @@
   width: 100%;
 }
 
+@mixin hamburger-transition {
+  transition: transform 0.5s ease-out;
+}
+
+
 /**
  * 1. Allows sizing the icon by changing its font-size.
  * 2. Vertical center.
  */
+
 .c-hamburger {
   @include font-size(27px);
   width: 1em; /* [1] */
@@ -27,6 +35,12 @@
   border: none;
   position: relative;
   @include hamburger-line;
+  @include hamburger-transition;
+
+  .is-open & {
+    transform: rotate(45deg);
+    border: none;
+  }
 
   &::before {
     @include hamburger-line;
@@ -39,5 +53,10 @@
     @include hamburger-line;
     @include hamburger-line-after-before;
     bottom: 0;
+    @include hamburger-transition;
+
+    .is-open & {
+      transform: rotate(-90deg) translateX(0.45em);
+    }
   }
 }
