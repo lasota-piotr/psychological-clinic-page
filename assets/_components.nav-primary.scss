@@ -7,8 +7,8 @@ $nav-primary-element-height: 30px;
 .c-nav-primary {
   display: flex;
   align-items: center;
-  padding-top: $unit;
-  padding-bottom: $unit;
+  padding-top: $unit-small;
+  padding-bottom: $unit-small;
 }
 
   .c-nav-primary__logo {
@@ -23,12 +23,11 @@ $nav-primary-element-height: 30px;
   }
 
   .c-nav-primary__list {
-    position: absolute;
+    position: fixed;
     margin: 0;
     top: 0;
     right: 0;
     height: 100%;
-    z-index: 1;
     transform: translateX(100%);
     transition: $global-transition;
     padding-top: $unit;
@@ -36,7 +35,6 @@ $nav-primary-element-height: 30px;
     max-width: 80%;
 
     .is-open > & {
-      position: fixed;
       transform: none;
     }
 
@@ -60,7 +58,7 @@ $nav-primary-element-height: 30px;
     transition-delay: 0.1s;
 
     .is-open & {
-      transform: translateX(-90%);
+      transform: translateX(-95%);
     }
 
     @include mq($from: tablet) {
