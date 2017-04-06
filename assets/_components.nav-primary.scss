@@ -95,7 +95,7 @@ $nav-primary-element-height: 30px;
 
   .c-nav-primary__link {
     display: block;
-    padding: $unit-tiny $unit;
+    padding: $unit-small $unit;
     @include font-size(18px);
     color: #fff;
 
@@ -104,6 +104,14 @@ $nav-primary-element-height: 30px;
       padding-left: $unit-small;
       padding-right: $unit-small;
       color: $color-primary-nav-wide-text;
+    }
+
+    &:hover {
+      color: $color-brand--light;
+
+      @include mq($from: tablet) {
+        color: $color-brand--dark;
+      }
     }
   }
 
@@ -136,11 +144,27 @@ $nav-primary-element-height: 30px;
       background-color: $color-primary-nav-background;
       border-radius: $global-radius;
       text-align: center;
+      box-shadow: 0 2px 6px 2px rgba(0,0,0,0.3);
+      transition: $global-transition-fast;
+    }
+
+    &::before {
+      @include mq($from: tablet) {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 10px solid transparent;
+        border-bottom: 15px solid $color-primary-nav-background;
+      }
     }
 
     .c-nav-primary__item:hover > & {
-      opacity: 1;
-      visibility: visible;
+      @include mq($from: tablet) {
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
 
@@ -152,5 +176,9 @@ $nav-primary-element-height: 30px;
 
     @include mq($from: tablet) {
       white-space: nowrap;
+    }
+
+    &:hover {
+      color: $color-brand--light;
     }
   }
