@@ -6,8 +6,8 @@
 
 // Standardise some UI treatments.
 $global-radius: 3px !default;
-$global-transition: all 300ms ease-in-out !default;
-
+$global-transition:      all 300ms ease-in-out !default;
+$global-transition-fast: all 150ms ease-in-out;
 // Fonts
 // https://bitsofco.de/the-new-system-font-stack/
 $system-font: -apple-system,
