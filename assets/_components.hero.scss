@@ -27,21 +27,24 @@ $color-hero-background: $color-gray--light;
 
   .c-hero__wrapper {
     padding-bottom: 100%;
-    min-height: 330px;
+    min-height: 420px;
 
     @include mq($from: tablet) {
       padding-bottom: 56.25%;
     }
 
     @include mq($from: desktop) {
-      padding-bottom: 700px;
+      padding-bottom: 750px;
     }
 
   }
 
+  /**
+   * 1. More then 50%, because of fixed menu above hero
+   */
   .c-hero__content {
     position: absolute;
-    top: 50%;
+    top: 55%; /* [1] */
     transform: translateY(-50%);
     color: $color-hero;
     max-width: 25em;
