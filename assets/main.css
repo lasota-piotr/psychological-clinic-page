@@ -1535,17 +1535,21 @@ a {
 
 .c-hero__wrapper {
   padding-bottom: 100%;
-  min-height: 330px; }
+  min-height: 420px; }
   @media (min-width: 46.25em) {
     .c-hero__wrapper {
       padding-bottom: 56.25%; } }
   @media (min-width: 61.25em) {
     .c-hero__wrapper {
-      padding-bottom: 700px; } }
+      padding-bottom: 750px; } }
 
+/**
+ * 1. More then 50%, because of fixed menu above hero
+ */
 .c-hero__content {
   position: absolute;
-  top: 50%;
+  top: 55%;
+  /* [1] */
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1790,7 +1794,7 @@ a {
 
 .c-nav-primary__link {
   display: block;
-  padding: 6px 24px;
+  padding: 12px 24px;
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.33333;
@@ -1801,6 +1805,11 @@ a {
       padding-left: 12px;
       padding-right: 12px;
       color: #262626; } }
+  .c-nav-primary__link:hover {
+    color: #31afdc; }
+    @media (min-width: 46.25em) {
+      .c-nav-primary__link:hover {
+        color: #114e64; } }
 
 .c-nav-primary__link--active {
   text-decoration: underline; }
@@ -1823,10 +1832,25 @@ a {
       padding: 12px 6px;
       background-color: #262626;
       border-radius: 3px;
-      text-align: center; } }
-  .c-nav-primary__item:hover > .c-nav-primary__sub-list {
-    opacity: 1;
-    visibility: visible; }
+      text-align: center;
+      box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3);
+      -webkit-transition: all 150ms ease-in-out;
+              transition: all 150ms ease-in-out; } }
+  @media (min-width: 46.25em) {
+    .c-nav-primary__sub-list::before {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      border: 10px solid transparent;
+      border-bottom: 15px solid #262626; } }
+  @media (min-width: 46.25em) {
+    .c-nav-primary__item:hover > .c-nav-primary__sub-list {
+      opacity: 1;
+      visibility: visible; } }
 
 .c-nav-primary__sub-link {
   display: block;
@@ -1838,6 +1862,8 @@ a {
   @media (min-width: 46.25em) {
     .c-nav-primary__sub-link {
       white-space: nowrap; } }
+  .c-nav-primary__sub-link:hover {
+    color: #31afdc; }
 
 /* ==========================================================================
    #PAGE-HEAD
@@ -1847,9 +1873,11 @@ a {
   top: 0;
   left: 0;
   z-index: 1;
-  width: 100%;
-  background-color: #fff;
-  border-bottom: 1px solid #e6e6e6; }
+  width: 100%; }
+  .c-page-head.is-scrolled {
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1); }
 
 /* ==========================================================================
    #HAMBURGER
