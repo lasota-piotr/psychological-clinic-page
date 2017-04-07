@@ -51,6 +51,17 @@
    }
  }
 
+ .c-panel--huge {
+   padding-top: $unit-huge;
+   padding-bottom: $unit-huge;
+ }
+
+ .c-panel--huge\@tablet {
+   @include mq($from: tablet) {
+     padding-top: $unit-huge;
+     padding-bottom: $unit-huge;
+   }
+ }
 
 
 
@@ -72,4 +83,11 @@
 
 .c-panel--attention {
   background-color: $color-panel-background--attention;
+}
+
+/* Border variants
+   ========================================================================== */
+
+.c-panel--border-bottom {
+  border-bottom: 1px solid $color-gray--very-light;
 }
