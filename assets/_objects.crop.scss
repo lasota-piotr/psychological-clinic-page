@@ -62,6 +62,13 @@ $inuit-crops: (
     transform: translate(-50%, -50%);
   }
 
+  /* Image size variants
+     ========================================================================= */
+
+  .o-crop__content--fill {
+    width: 100%;
+  }
+
 
 
 /* stylelint-disable */
