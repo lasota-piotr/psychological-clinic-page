@@ -12,14 +12,12 @@
 .o-box {
   @include inuit-clearfix();
   display: block; /* [1] */
-  padding: $inuit-global-spacing-unit;
 
   > :last-child {
     margin-bottom: 0;
   }
 
 }
-
 
 
 
@@ -37,6 +35,16 @@
 
 .o-box--small {
   padding: $inuit-global-spacing-unit-small;
+}
+
+.o-box--normal {
+  padding: $inuit-global-spacing-unit;
+}
+
+.o-box--normal\@tablet {
+  @include mq($from: tablet) {
+    padding: $inuit-global-spacing-unit;
+  }
 }
 
 .o-box--large {
