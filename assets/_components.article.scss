@@ -1,0 +1,40 @@
+/* ==========================================================================
+   #ARTICLE
+   ========================================================================== */
+
+/**
+ * Article
+ */
+
+
+.c-article {
+
+  @include mq($from: desktop) {
+    margin-left: -$unit-large;
+    padding-right: $unit-large;
+  }
+}
+
+  .c-article__prominent {
+    @include font-size(21px, 1.5);
+  }
+
+  .c-article__image {
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    max-width: 350px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: $unit;
+
+    @include mq($from: desktop) {
+      float: right;
+      shape-outside: border-box;
+      padding-left: $unit;
+      margin-right: -40%;
+      margin-top: $unit-large;
+      max-width: 400px;
+    }
+  }
