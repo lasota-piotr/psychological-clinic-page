@@ -15,8 +15,21 @@
   }
 }
 
-  .c-article__prominent {
+  .c-article__title {
+    @include font-size(40px, 1.5);
+  }
+
+  .c-article__subtitle {
+    @include font-size(28px, 1.5);
+    font-weight: $font-weight-light;
+  }
+
+  .c-article__content {
     @include font-size(21px, 1.5);
+  }
+
+  .c-article__content--prominent {
+    font-weight: $font-weight-bold;
   }
 
   .c-article__image {
@@ -33,7 +46,7 @@
       float: right;
       shape-outside: border-box;
       padding-left: $unit;
-      margin-right: -40%;
+      margin-right: -33%;
       margin-top: $unit-large;
       max-width: 400px;
     }
