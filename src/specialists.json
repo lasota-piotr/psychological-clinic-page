@@ -1,0 +1,39 @@
+{
+  "specialists" : [
+    {
+      "image" : "../images/face-03.jpg",
+      "firstName" : "John",
+      "lastName" : "Doe",
+      "specializations" : ["psycholog", "psychoterapeuta"],
+      "aboutSummary" : "W przeciwieństwie do rozpowszechnionych opinii, Lorem Ipsum nie jest tylko przypadkowym tekstem. Ma ono korzenie w klasycznej łacińskiej literaturze"
+   },
+   {
+      "image" : "../images/face-03.jpg",
+      "firstName" : "Agnieszka",
+      "lastName" : "Maj-Lenartowicz",
+      "specializations" : ["psychiatra"],
+      "aboutSummary" : "W przeciwieństwie do rozpowszechnionych opinii, Lorem Ipsum nie jest tylko przypadkowym tekstem. Ma ono korzenie w klasycznej łacińskiej literaturze z 45 roku przed Chrystusem, czyli ponad 2000 lat temu! Richard McClintock, wykładowca łaciny na uniwersytecie Hampden-Sydney"
+   },
+   {
+      "image" : "../images/face-03.jpg",
+      "firstName" : "Jan",
+      "lastName" : "Kowalski",
+      "specializations" : ["psycholog", "psychoterapeuta"],
+      "aboutSummary" : "W przeciwieństwie do rozpowszechnionych opinii, Lorem Ipsum nie jest tylko przypadkowym tekstem."
+   },
+   {
+      "image" : "../images/face-03.jpg",
+      "firstName" : "Jan",
+      "lastName" : "Kowalski",
+      "specializations" : ["psycholog", "psychoterapeuta"],
+      "aboutSummary" : "W przeciwieństwie do rozpowszechnionych opinii, Lorem Ipsum nie jest tylko przypadkowym tekstem. Ma ono korzenie w klasycznej łacińskiej literaturze z 45 roku przed Chrystusem, czyli ponad 2000 lat temu! Richard McClintock, wykładowca łaciny na uniwersytecie Hampden-Sydney w Virginii, przyjrzał się uważniej jednemu z najbardziej niejasnych słów w Lorem Ipsum"
+   },
+   {
+      "image" : "../images/face-03.jpg",
+      "firstName" : "Jan",
+      "lastName" : "Kowalski",
+      "specializations" : ["psycholog", "psychoterapeuta"],
+      "aboutSummary" : "W przeciwieństwie do rozpowszechnionych opinii, Lorem Ipsum nie jest tylko przypadkowym tekstem. Ma ono korzenie w klasycznej łacińskiej literaturze z 45 roku przed Chrystusem, czyli ponad 2000 lat temu! Richard McClintock, wykładowca łaciny na uniwersytecie Hampden-Sydney w Virginii, przyjrzał się uważniej jednemu z najbardziej niejasnych słów w Lorem Ipsum"
+   }
+  ]
+}
