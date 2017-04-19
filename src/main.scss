@@ -57,90 +57,90 @@
  */
 
 // SETTINGS
-@import "settings.config";
-@import "settings.core";
-@import "settings.global";
-@import "settings.colors";
+@import "css/settings.config";
+@import "css/settings.core";
+@import "css/settings.global";
+@import "css/settings.colors";
 
 
 
 
 // TOOLS
-@import "tools.font-size";
-@import "tools.clearfix";
-@import "tools.hidden";
-@import "tools.mq";
-@import "tools.aliases";
+@import "css/tools.font-size";
+@import "css/tools.clearfix";
+@import "css/tools.hidden";
+@import "css/tools.mq";
+@import "css/tools.aliases";
 
 
 
 
 // GENERIC
-@import "generic.box-sizing";
-@import "generic.normalize";
-@import "generic.reset";
-@import "generic.shared";
+@import "css/generic.box-sizing";
+@import "css/generic.normalize";
+@import "css/generic.reset";
+@import "css/generic.shared";
 
 
 
 
 
 // ELEMENTS
-@import "elements.page";
-@import "elements.headings";
-@import "elements.images";
-@import "elements.tables";
-@import "elements.anchors";
+@import "css/elements.page";
+@import "css/elements.headings";
+@import "css/elements.images";
+@import "css/elements.tables";
+@import "css/elements.anchors";
 
 
 
 
 
 // OBJECTS
-@import "objects.wrapper";
-@import "objects.layout";
-@import "objects.media";
-@import "objects.flag";
-@import "objects.list-bare";
-@import "objects.list-inline";
-@import "objects.box";
-@import "objects.block";
-@import "objects.ratio";
-@import "objects.crop";
-@import "objects.table";
-@import "objects.pack";
-@import "objects.flex";
+@import "css/objects.wrapper";
+@import "css/objects.layout";
+@import "css/objects.media";
+@import "css/objects.flag";
+@import "css/objects.list-bare";
+@import "css/objects.list-inline";
+@import "css/objects.box";
+@import "css/objects.block";
+@import "css/objects.ratio";
+@import "css/objects.crop";
+@import "css/objects.table";
+@import "css/objects.pack";
+@import "css/objects.flex";
 
 
 
 
 
 // COMPONENTS
-@import "components.buttons";
-@import "components.hero";
-@import "components.icons";
-@import "components.cta";
-@import "components.panel";
-@import "components.our-team";
-@import "components.nav-primary";
-@import "components.page-head";
-@import "components.hamburger";
-@import "components.card";
-@import "components.article";
+@import "css/components.buttons";
+@import "css/components.hero";
+@import "css/components.icons";
+@import "css/components.cta";
+@import "css/components.panel";
+@import "css/components.our-team";
+@import "css/components.nav-primary";
+@import "css/components.page-head";
+@import "css/components.hamburger";
+@import "css/components.card";
+@import "css/components.article";
 
 
 
 
 
 // UTILITIES
-@import "utilities.clearfix";
+@import "css/utilities.clearfix";
 
 $inuit-offsets: true;
-@import "utilities.widths";
-@import "utilities.headings";
-@import "utilities.spacings";
-@import "utilities.responsive-spacings";
-@import "utilities.print";
-@import "utilities.hide";
-@import "utilities.type";
-@import "utilities.links";
+@import "css/utilities.widths";
+@import "css/utilities.headings";
+@import "css/utilities.spacings";
+@import "css/utilities.responsive-spacings";
+@import "css/utilities.print";
+@import "css/utilities.hide";
+@import "css/utilities.type";
+@import "css/utilities.links";

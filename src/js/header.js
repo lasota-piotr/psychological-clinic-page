@@ -1,8 +1,13 @@
-(function() {
-  'use strict';
+const header = require('../_includes/header.hbs');
 
-  /* Primary-nav menu
-    ========================================================================= */
+export const renderHeader = function() {
+  const headerContainer = document.querySelector('#header');
+  headerContainer.innerHTML = header();
+}
+
+/* Primary-nav menu
+   ========================================================================== */
+export const pageHeader = function() {
 
   const pageHead = document.querySelector('.js-page-head');
 
@@ -16,10 +21,10 @@
 
   function scrollHandler() {
     if(window.scrollY >= 50) {
-      console.log(pageHead.classList.add('is-scrolled'));
+     pageHead.classList.add('is-scrolled');
     }
     if(window.scrollY < 50) {
-      console.log(pageHead.classList.remove('is-scrolled'));
+      pageHead.classList.remove('is-scrolled');
     }
   }
 
@@ -38,4 +43,4 @@
 
 
   document.addEventListener('scroll', scrollHandler);
-}());
+};

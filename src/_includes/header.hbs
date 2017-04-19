@@ -1,0 +1,78 @@
+{{!--<header>
+  <img src="./images/html5_logo.svg" alt="" style="width: 100px">
+  <h1>This is header from hbs file</h1>
+</header>--}}
+
+<header class="c-page-head js-page-head">
+
+    <!-- https://csswizardry.com/2015/06/contextual-styling-ui-components-nesting-and-implementation-detail/ -->
+    <div class="o-wrapper">
+
+      <nav class="c-nav-primary js-nav-primary"
+        data-ui-component="Main navigation">
+
+        <h1 class="c-nav-primary__logo">
+          <a href="/" class="c-nav-primary__logo-text">
+            Świętokrzyski<br> Ośrodek Terapii
+          </a>
+        </h1>
+
+        <ul class="c-nav-primary__list  o-list-bare">
+
+          <li class="c-nav-primary__menu-btn-wrapper js-nav-primary__menu-btn-wrapper">
+            <button class="c-nav-primary__menu-btn c-btn c-btn--small">
+              <div class="c-hamburger"></div>
+            </button>
+          </li>
+
+          <li class="c-nav-primary__item">
+            <a href="/" class="c-nav-primary__link c-nav-primary__link--active">
+              Strona główna
+            </a>
+          </li>
+
+          <li class="c-nav-primary__item">
+            <a href="Poradnie" class="c-nav-primary__link">Poradnie</a>
+            <ul class="c-nav-primary__sub-list o-list-bare">
+              <li class="c-nav-primary__item">
+                <a href="#" class="c-nav-primary__sub-link">
+                  Poradnia zdrowia psychicznego
+                </a>
+              </li>
+              <li class="c-nav-primary__item">
+                <a href="#" class="c-nav-primary__sub-link">
+                  Poradnia psychologiczna
+                </a>
+              </li>
+              <li class="c-nav-primary__item">
+                <a href="#" class="c-nav-primary__sub-link">
+                  Poradnia uzależnień
+                </a>
+              </li>
+              <li class="c-nav-primary__item">
+                <a href="#" class="c-nav-primary__sub-link">
+                  Zespół leczenia środowiskowego
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="c-nav-primary__item">
+            <a href="specjalisci.html" class="c-nav-primary__link">Specjaliści</a>
+          </li>
+
+          <li class="c-nav-primary__item">
+            <a href="o-nas.html" class="c-nav-primary__link">O nas</a>
+          </li>
+
+          <li class="c-nav-primary__item">
+            <a href="kontakt.html" class="c-nav-primary__link">Kontakt</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+
+  </header>
