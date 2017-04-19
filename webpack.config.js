@@ -18,7 +18,7 @@ module.exports = {
     app: './src/app.js',
     landing: './src/js/landing.js',
     specialists: './src/js/specialists.js',
-    specialist: './src/js/specialist.js'
+    article: './src/js/article.js'
   },
   output: {
     // outputPath: '/',
@@ -98,9 +98,9 @@ module.exports = {
       //   collapseWhitespace: true
       // },
       hash: true,
-      chunks: ['app', 'specialist'],
-      filename: 'specialist.html',
-      template: './src/specialist.html',
+      chunks: ['app', 'article'],
+      filename: 'article.html',
+      template: './src/article.html',
     }),
     new ExtractTextPlugin({
       filename: './[name].css',
