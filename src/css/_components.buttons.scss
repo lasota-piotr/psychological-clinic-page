@@ -48,13 +48,13 @@
 
   &:hover,
   &:focus {
-    background-color: #3774a2;
+    background-color: $color-btn;
   }
 
 }
 
 .c-btn--secondary {
-  background-color: #2f4054;
+  background-color: $color-btn-secondary;
 
   &,
   &:hover,
