@@ -38,7 +38,10 @@ $inuit-spacing-sizes: (
   '-small': $inuit-global-spacing-unit-small,
   '-large': $inuit-global-spacing-unit-large,
   '-huge': $inuit-global-spacing-unit-huge,
-  '-none': 0
+  '-none': 0,
+  '-minus-large': -$inuit-global-spacing-unit-large,
+  '-minus-xlarge': -$inuit-global-spacing-unit-xlarge,
+  '-minus-huge': -$inuit-global-spacing-unit-huge
 ) !default;
 
 @each $property-namespace, $property in $inuit-spacing-properties {

@@ -1,3 +1,4 @@
+
 ///* ========================================================================
 //   #CORE
 //   ======================================================================== */
@@ -30,6 +31,7 @@ $inuit-global-spacing-unit: round($inuit-global-line-height) !default;
 $inuit-global-spacing-unit-factor-tiny:   0.25 !default;
 $inuit-global-spacing-unit-factor-small:  0.5  !default;
 $inuit-global-spacing-unit-factor-large:  2    !default;
+$inuit-global-spacing-unit-factor-xlarge: 3    !default;
 $inuit-global-spacing-unit-factor-huge:   4    !default;
 
 
@@ -61,6 +63,7 @@ $inuit-global-spacing-unit-factor-huge:   4    !default;
       $inuit-global-spacing-unit-factor-tiny
       $inuit-global-spacing-unit-factor-small
       $inuit-global-spacing-unit-factor-large
+      $inuit-global-spacing-unit-factor-xlarge
       $inuit-global-spacing-unit-factor-huge {
 
   @if (type-of($_inuit-spacing-unit) == number) {
@@ -78,7 +81,8 @@ $inuit-global-spacing-unit-factor-huge:   4    !default;
 
 // Private/framework-only reassignment. Do not alter anything below.
 
-$inuit-global-spacing-unit-tiny:  round($inuit-global-spacing-unit * $inuit-global-spacing-unit-factor-tiny);
-$inuit-global-spacing-unit-small: round($inuit-global-spacing-unit * $inuit-global-spacing-unit-factor-small);
-$inuit-global-spacing-unit-large: round($inuit-global-spacing-unit * $inuit-global-spacing-unit-factor-large);
-$inuit-global-spacing-unit-huge:  round($inuit-global-spacing-unit * $inuit-global-spacing-unit-factor-huge);
+$inuit-global-spacing-unit-tiny:   round($inuit-global-spacing-unit * $inuit-global-spacing-unit-factor-tiny);
+$inuit-global-spacing-unit-small:  round($inuit-global-spacing-unit * $inuit-global-spacing-unit-factor-small);
+$inuit-global-spacing-unit-large:  round($inuit-global-spacing-unit * $inuit-global-spacing-unit-factor-large);
+$inuit-global-spacing-unit-xlarge: round($inuit-global-spacing-unit * $inuit-global-spacing-unit-factor-xlarge);
+$inuit-global-spacing-unit-huge:   round($inuit-global-spacing-unit * $inuit-global-spacing-unit-factor-huge);

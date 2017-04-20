@@ -39,7 +39,10 @@ $inuit-responsive-spacing-properties: (
 ) !default;
 
 $inuit-responsive-spacing-sizes: (
-  "-none": 0
+  null: $inuit-global-spacing-unit,
+  '-large': $inuit-global-spacing-unit-large,
+  '-huge': $inuit-global-spacing-unit-huge,
+  '-none': 0
 ) !default;
 
 
