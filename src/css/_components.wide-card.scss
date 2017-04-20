@@ -1,0 +1,41 @@
+/* ==========================================================================
+   #WIDE-CARD
+   ========================================================================== */
+
+.c-wide-card {
+  overflow: hidden;
+  border-radius: $global-radius;
+  box-shadow: 0 1px 4px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include mq($from: tablet) {
+    flex-direction: row;
+  }
+
+  @include mq($from: desktop) {
+    width: 90%;
+  }
+}
+
+  .c-wide-card__title {
+    @include font-size(24px, 1.3);
+    font-weight: $font-weight-regular;
+  }
+
+  .c-wide-card__item {
+    flex-grow: 1;
+  }
+
+  .c-wide-card__item--large {
+    flex-grow: 2;
+  }
+
+  .c-wide-card__item--dark {
+    background-color: $color-brand--dark;
+    color: #fff;
+  }
+
+
