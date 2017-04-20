@@ -1,0 +1,57 @@
+<main data-ui-component="Clinics">
+
+  <section class="c-hero c-hero--small" data-ui-component="Page Hero">
+
+    <div class="o-wrapper c-hero__wrapper">
+
+      <div class="c-hero__content">
+        <h1 class="c-hero__title u-padding-top-huge">
+         Poradnie
+        </h1>
+        <h2 class="c-hero__sub-title">
+          Lorem ipsum dolor sit amet.
+        </h2>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="c-panel u-margin-bottom u-margin-bottom-huge@desktop">
+
+    <div class="o-wrapper">
+
+      <div class="o-layout o-layout--center">
+
+        {{#each clinics}}
+
+          <div class="o-layout__item u-1/1 u-1/2@tablet u-margin-bottom-large">
+
+            <article class="o-block o-block--left">
+
+              <div class="o-block__img">
+                <svg class="c-icon c-icon--huge" viewBox="0 0 24 24">
+                  {{{icon}}}
+                </svg>
+              </div>
+
+              <div class="o-block__body">
+                <h2 class="u-h4">{{name}}</h2>
+                <p>{{aboutSummary}}</p>
+              </div>
+
+            </article>
+
+          </div>
+
+        {{/each}}
+        
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+</main>
