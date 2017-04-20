@@ -1,0 +1,108 @@
+<main data-ui-component="Contact">
+
+  <article class="c-hero c-hero--small" data-ui-component="Page Hero">
+
+    <div class="o-wrapper c-hero__wrapper">
+
+      <div class="c-hero__content">
+        <h1 class="c-hero__title">
+          Skontaktuj się z nami
+        </h1>
+      </div>
+
+    </div>
+
+  </article>
+
+  <div class="c-panel u-padding-bottom-huge">
+
+    <div class="o-wrapper o-flex o-flex--justify-content-center">
+
+          <section class="
+            c-wide-card
+            o-flex__child
+            u-margin-top-minus-huge
+            u-z-index-1
+            ">
+
+            <article class="
+              c-wide-card__item c-wide-card__item--large
+              o-box o-box--large
+              ">
+
+              <h2 class="c-wide-card__title">Napisz do nas</h2>
+
+              <form method="POST" action="http://formspree.io/varicumok@1rentcar.top"
+                class="o-flex o-flex--column">
+
+                <label for="name">Imię</label>
+                <input type="text" name="name" id="name" placeholder="Imię" required 
+                  class="u-margin-bottom-small">
+                <label for="email">Adres email</label>
+                <input type="email" id="email" name"_replyto" placeholder="Email" required 
+                  class="u-margin-bottom-small">
+                <label for="message">Wiadomość</label>
+                <textarea name="message" id="message" cols="30" rows="10" 
+                  placeholder="Tekst wiadomości" required  
+                  class="u-margin-bottom-small"></textarea>
+                <input type="submit" value="Wyślij" class="c-btn c-btn--primary">
+              
+              </form>
+
+            </article>
+
+
+            <article class="
+              c-wide-card__item c-wide-card__item--dark
+              o-box o-box--large
+              ">
+
+              {{#each contact}}
+                <h2 class="c-wide-card__title u-margin-bottom-large">Informacje kontaktowe</h2>
+        
+                <h3 class="u-h6 u-text-weight-regular">{{name}}</h3>
+                
+                <div class="o-media u-margin-bottom">
+                  <div class="o-media__img">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="#afafaf" d="M12,2C15.31,2 18,4.66 18,7.95C18,12.41 12,19 12,19C12,19 6,12.41 6,7.95C6,4.66 8.69,2 12,2M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6M20,19C20,21.21 16.42,23 12,23C7.58,23 4,21.21 4,19C4,17.71 5.22,16.56 7.11,15.83L7.75,16.74C6.67,17.19 6,17.81 6,18.5C6,19.88 8.69,21 12,21C15.31,21 18,19.88 18,18.5C18,17.81 17.33,17.19 16.25,16.74L16.89,15.83C18.78,16.56 20,17.71 20,19Z" />
+                    </svg>
+                  </div>
+                  <div class="o-media__body"> 
+                    <ul class="o-list-bare">
+                      {{#each address}}
+                        <li>{{this}}</li>
+                      {{/each}}
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="o-media u-margin-bottom">
+                  <div class="o-media__img">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="#afafaf" d="M17.25,18H6.75V4H17.25M14,21H10V20H14M16,1H8A3,3 0 0,0 5,4V20A3,3 0 0,0 8,23H16A3,3 0 0,0 19,20V4A3,3 0 0,0 16,1Z" />
+                  </svg>
+                  </div>
+                  <div class="o-media__body"> 
+                    <ul class="o-list-bare">
+                      {{#each numbers}}
+                        <li>{{this}}</li>
+                      {{/each}}
+                    </ul>
+                  </div>
+                </div>
+
+              {{/each}}
+
+            </article>
+
+          </section>
+        
+
+    </div>
+
+  </div>
+
+
+
+</main>
