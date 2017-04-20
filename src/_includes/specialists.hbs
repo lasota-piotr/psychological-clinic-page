@@ -1,12 +1,18 @@
 <main data-ui-component="Spacialists">
 
-  <div class="c-panel u-margin-top-huge u-text-center">
+  <section class="c-hero c-hero--small" data-ui-component="Page Hero">
 
-    <div class="o-wrapper">
-      <h1 class="u-margin-bottom-none">Nasi specjaliści</h1>
+    <div class="o-wrapper c-hero__wrapper">
+
+      <div class="c-hero__content">
+        <h1 class="c-hero__title">
+          Nasi specialiści
+        </h1>
+      </div>
+
     </div>
 
-  </div>
+  </section>
 
   <div class="c-panel">
 
@@ -16,8 +22,14 @@
       <section class="o-flex o-flex--wrap o-flex--justify-content-around">
 
         {{#each specialists}}
-          <article class="o-flex__child o-box o-box--small o-box--normal@tablet c-card u-margin-bottom-large u-margin-horizontal-small">
-
+          <article class="
+            c-card
+            o-flex__child
+            o-box o-box--small 
+            u-margin-top-minus-xlarge u-margin-bottom-huge u-margin-horizontal-small
+            u-z-index-1
+            ">
+            
             <div class="o-block o-block--left">
 
               <div class="o-block__img o-crop o-crop--4:3">
