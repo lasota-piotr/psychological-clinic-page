@@ -20,10 +20,10 @@ export const pageHeader = function() {
   }
 
   function scrollHandler() {
-    if(window.scrollY >= 50) {
+    if(window.scrollY >= 10) {
      pageHead.classList.add('is-scrolled');
     }
-    if(window.scrollY < 50) {
+    if(window.scrollY < 10) {
       pageHead.classList.remove('is-scrolled');
     }
   }
