@@ -6,9 +6,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
-
+  transition: background 150ms ease-in-out;
 
   &.is-scrolled {
     background-color: #fff;
