@@ -18,6 +18,8 @@ module.exports = {
     app: './src/app.js',
     landing: './src/js/landing.js',
     specialists: './src/js/specialists.js',
+    clinics: './src/js/clinics.js',
+    contact: './src/js/contact.js',
     article: './src/js/article.js'
   },
   output: {
@@ -91,6 +93,26 @@ module.exports = {
       chunks: ['app', 'specialists'],
       filename: 'specialists.html',
       template: './src/specialists.html',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Poradnie',
+      // minify: {
+      //   collapseWhitespace: true
+      // },
+      hash: true,
+      chunks: ['app', 'clinics'],
+      filename: 'clinics.html',
+      template: './src/clinics.html',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Kontakt',
+      // minify: {
+      //   collapseWhitespace: true
+      // },
+      hash: true,
+      chunks: ['app', 'contact'],
+      filename: 'contact.html',
+      template: './src/contact.html',
     }),
     new HtmlWebpackPlugin({
       title: 'Specjalista',
