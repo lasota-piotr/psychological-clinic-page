@@ -25,6 +25,7 @@
   cursor: pointer; /* [5] */
   padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit;
   transition: $global-transition;
+  border: none;
   border-radius: $global-radius;
 }
 
