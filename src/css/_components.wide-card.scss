@@ -11,11 +11,8 @@
   flex-direction: column;
   width: 100%;
 
-  @include mq($from: tablet) {
-    flex-direction: row;
-  }
-
   @include mq($from: desktop) {
+    flex-direction: row;
     width: 90%;
   }
 }
