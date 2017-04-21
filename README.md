@@ -1,6 +1,8 @@
 # Psychological clinic page
 
-Page for psychological clinic
+Page for psychological clinic.
+
+
 To view a live demo, [click here](https://lasota-piotr.github.io/psychological-clinic-page/dist/).
 
 
