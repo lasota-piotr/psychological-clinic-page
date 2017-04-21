@@ -41,16 +41,26 @@
   padding: $inuit-global-spacing-unit;
 }
 
-.o-box--normal\@tablet {
-  @include mq($from: tablet) {
-    padding: $inuit-global-spacing-unit;
-  }
-}
-
 .o-box--large {
   padding: $inuit-global-spacing-unit-large;
 }
 
 .o-box--huge {
   padding: $inuit-global-spacing-unit-huge;
+}
+
+
+/* Responsive variants
+   ========================================================================== */
+
+.o-box--normal\@tablet {
+  @include mq($from: tablet) {
+    padding: $inuit-global-spacing-unit;
+  }
+}
+
+.o-box--large\@tablet {
+  @include mq($from: tablet) {
+    padding: $inuit-global-spacing-unit-large;
+  }
 }
