@@ -44,6 +44,25 @@
   }
 }
 
+/* Text right
+  ========================================================================== */
+
+.u-text-right {
+  text-align: right !important;
+}
+
+.u-text-right\@tablet {
+  @include mq($from: tablet) {
+    text-align: right !important;
+  }
+}
+
+.u-text-right\@desktop {
+  @include mq($from: desktop) {
+    text-align: right !important;
+  }
+}
+
 /* Text weight
   ========================================================================== */
 
