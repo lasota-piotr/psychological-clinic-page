@@ -32,12 +32,17 @@
 
         <div class="o-layout__item u-1/1 u-1/2@tablet u-1/4@desktop">
           <h4 class="u-h6 u-margin-bottom-tiny">Kontakt</h4>
-          <ul class="o-list-bare">
-            <li>Świętokrzyski Ośrodek Terapii</li>
-            <li>ul. Os. Ogrody 10/3U</li>
-            <li>27-400, Ostrowiec Świętokrzyski</li>
-            <li><a href="tel:412633936">(41) 263-39-36</a></li>
-          </ul>
+          {{#each contact}}
+            <ul class="o-list-bare">
+              <li>{{name}}</li>
+              {{#each address}}
+                <li>{{this}}</li>
+              {{/each}}
+              {{#each numbers}}
+                <li><a href="tel:+48-{{this}}">{{this}}</a></li>
+              {{/each}}
+            </ul>
+          {{/each}}
         </div>
 
       </div>
