@@ -1,6 +1,6 @@
 const contact = require('../_includes/contact.hbs');
 import jsonContact from '../contact.json';
-import { googleMapsInit } from './googleMaps';
+import { googleMapsInit } from './helpers/googleMaps';
 
 function rendercontact(jsonData) {
   const contactContainer = document.querySelector('#contact');
