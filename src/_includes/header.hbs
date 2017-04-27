@@ -2,67 +2,78 @@
 
     <!-- https://csswizardry.com/2015/06/contextual-styling-ui-components-nesting-and-implementation-detail/ -->
     <div class="o-wrapper">
+      {{#with links}}
+        <nav class="c-nav-primary js-nav-primary"
+          data-ui-component="Main navigation">
 
-      <nav class="c-nav-primary js-nav-primary"
-        data-ui-component="Main navigation">
-
-        <h1 class="c-nav-primary__logo">
-          <a href="./" class="c-nav-primary__logo-text">
-            Świętokrzyski<br> Ośrodek Terapii
-          </a>
-        </h1>
-
-        <ul class="c-nav-primary__list  o-list-bare">
-
-          <li class="c-nav-primary__menu-btn-wrapper js-nav-primary__menu-btn-wrapper">
-            <button class="c-nav-primary__menu-btn c-btn c-btn--small">
-              <div class="c-hamburger"></div>
-            </button>
-          </li>
-
-          <li class="c-nav-primary__item">
-            <a href="./" class="c-nav-primary__link c-nav-primary__link--active">
-              Strona główna
+          <h1 class="c-nav-primary__logo">
+            <a href="{{[Strona główna]}}" class="c-nav-primary__logo-text">
+              Świętokrzyski<br> Ośrodek Terapii
             </a>
-          </li>
+          </h1>
 
-          <li class="c-nav-primary__item">
-            <a href="clinics.html" class="c-nav-primary__link">Poradnie</a>
-            <ul class="c-nav-primary__sub-list o-list-bare">
-              <li class="c-nav-primary__item">
-                <a href="#" class="c-nav-primary__sub-link">
-                  Poradnia zdrowia psychicznego
-                </a>
-              </li>
-              <li class="c-nav-primary__item">
-                <a href="#" class="c-nav-primary__sub-link">
-                  Poradnia psychologiczna
-                </a>
-              </li>
-              <li class="c-nav-primary__item">
-                <a href="#" class="c-nav-primary__sub-link">
-                  Poradnia uzależnień
-                </a>
-              </li>
-              <li class="c-nav-primary__item">
-                <a href="#" class="c-nav-primary__sub-link">
-                  Zespół leczenia środowiskowego
-                </a>
-              </li>
-            </ul>
-          </li>
+          <ul class="c-nav-primary__list  o-list-bare">
 
-          <li class="c-nav-primary__item">
-            <a href="specialists.html" class="c-nav-primary__link">Specjaliści</a>
-          </li>
+            <li class="c-nav-primary__menu-btn-wrapper js-nav-primary__menu-btn-wrapper">
+              <button class="c-nav-primary__menu-btn c-btn c-btn--small">
+                <div class="c-hamburger"></div>
+              </button>
+            </li>
 
-          <li class="c-nav-primary__item">
-            <a href="contact.html" class="c-nav-primary__link">Kontakt</a>
-          </li>
+            <li class="c-nav-primary__item">
+              <a href="{{[Strona główna]}}" class="c-nav-primary__link js-nav-primary__link" data-page="landing">
+                Strona główna
+              </a>
+            </li>
 
-        </ul>
+            <li class="c-nav-primary__item">
+              <a href="{{[Poradnie]}}" class="c-nav-primary__link js-nav-primary__link"
+                data-page="clinics">
+                  Poradnie
+              </a>
+              <ul class="c-nav-primary__sub-list o-list-bare">
+                <li class="c-nav-primary__item">
+                  <a href="{{[Poradnia zdrowia psychicznego]}}" class="c-nav-primary__sub-link">
+                    Poradnia zdrowia psychicznego
+                  </a>
+                </li>
+                <li class="c-nav-primary__item">
+                  <a href="{{[Poradnia psychologiczna]}}" class="c-nav-primary__sub-link">
+                    Poradnia psychologiczna
+                  </a>
+                </li>
+                <li class="c-nav-primary__item">
+                  <a href="{{[Poradnia uzależnień]}}" class="c-nav-primary__sub-link">
+                    Poradnia uzależnień
+                  </a>
+                </li>
+                <li class="c-nav-primary__item">
+                  <a href="{{[Zespół leczenia środowiskowego]}}" class="c-nav-primary__sub-link">
+                    Zespół leczenia środowiskowego
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-      </nav>
+            <li class="c-nav-primary__item">
+              <a href="{{[Specjaliści]}}" class="c-nav-primary__link  js-nav-primary__link "
+                data-page="specialists">
+                Specjaliści
+              </a>
+            </li>
+
+            <li class="c-nav-primary__item">
+              <a href="{{[Kontakt]}}" class="c-nav-primary__link js-nav-primary__link"
+                data-page="contact">
+                  Kontakt
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+      {{/with}}
 
     </div>
 

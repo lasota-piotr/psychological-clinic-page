@@ -1,18 +1,42 @@
 const header = require('../_includes/header.hbs');
+import linksJson from '../links.json';
+
 
 export const renderHeader = function() {
   const headerContainer = document.querySelector('#header');
-  headerContainer.innerHTML = header();
+  headerContainer.innerHTML = header(linksJson);
 }
 
 /* Primary-nav menu
    ========================================================================== */
 export const pageHeader = function() {
+  function ready() {
+    return new Promise(resolve => {
+      	function checkState() {
+					if (document.readyState !== 'loading') resolve();
+				}
+				document.addEventListener('readystatechange', checkState);
+				checkState();	
+    });
+  }
+
+  ready()
+    .then(highlighActivePageLink);
+
 
   const pageHead = document.querySelector('.js-page-head');
 
   const menuBtn = document.querySelector('.js-nav-primary__menu-btn-wrapper');
   const navPrimary = document.querySelector('.js-nav-primary');
+  
+
+  function highlighActivePageLink() {
+    const navLinksElements = document.querySelectorAll('.js-nav-primary__link');
+    const mainEl = document.querySelector('.js-main');
+    const currPage = mainEl.dataset.page;
+    const navLinkToHighlight = [...navLinksElements].find(el => el.dataset.page === currPage);
+    navLinkToHighlight.classList.add('c-nav-primary__link--active');
+  }
 
   function menuBtnHandler(e) {
     navPrimary.classList.toggle('is-open');
