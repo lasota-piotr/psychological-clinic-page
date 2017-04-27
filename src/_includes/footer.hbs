@@ -11,24 +11,50 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt fugiat deserunt beatae cupiditate nulla ipsa odit. In odit dolore cumque sit quas nobis, nihil dicta officia modi commodi labore, vitae?</p>
         </div>
 
-        <div class="o-layout__item u-1/1 u-1/2@tablet u-1/4@desktop">
-          <h4 class="u-h6 u-margin-bottom-tiny">Świętokrzyski Ośrodek Terapii</h4>
-          <ul class="o-list-bare">
-            <li><a href="./">Strona główna</a></li>
-            <li><a href="clinics.html">Poradnie</a></li>
-            <li><a href="specialists.html">Specialiści</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
-          </ul>
-        </div>
+        {{#with links}}
 
-        <div class="o-layout__item u-1/1 u-1/2@tablet u-1/4@desktop">
-          <h4 class="u-h6 u-margin-bottom-tiny">Przydatne link</h4>
-          <ul class="o-list-bare">
-            <li><a href="specialists.html">Psycholog Ostrowiec Św.</a></li>
-            <li><a href="specialists.html">Psychoterapeuta Ostrowiec Św.</a></li>
-            <li><a href="specialists.html">Psychiatra Ostrowiec Św.</a></li>
-          </ul>
-        </div>
+          <div class="o-layout__item u-1/1 u-1/2@tablet u-1/4@desktop">
+            <h4 class="u-h6 u-margin-bottom-tiny">Świętokrzyski Ośrodek Terapii</h4>
+            <ul class="o-list-bare">
+              <li><a href="{{[Strona główna]}}">Strona główna</a></li>
+              <li><a href="{{[Poradnie]}}">Poradnie</a></li>
+              <li><a href="{{[Specjaliści]}}">Specialiści</a></li>
+                <ul class="o-list-bare u-margin-left u-margin-bottom-none">
+                  <li>
+                    <a href="{{[Poradnia zdrowia psychicznego]}}">
+                      Poradnia zdrowia psychicznego
+                    </a>
+                  </li>
+                  <li>
+                    <a href="{{[Poradnia psychologiczna]}}">
+                      Poradnia psychologiczna
+                    </a>
+                  </li>
+                  <li>
+                    <a href="{{[Poradnia uzależnień]}}">
+                      Poradnia uzależnień
+                    </a>
+                  </li>
+                  <li>
+                    <a href="{{[Zespół leczenia środowiskowego]}}">
+                      Zespół leczenia środowiskowego
+                    </a>
+                  </li>
+                </ul>
+              <li><a href="{{[Kontakt]}}">Kontakt</a></li>
+            </ul>
+          </div>
+
+          <div class="o-layout__item u-1/1 u-1/2@tablet u-1/4@desktop">
+            <h4 class="u-h6 u-margin-bottom-tiny">Przydatne link</h4>
+            <ul class="o-list-bare">
+              <li><a href="{{[Specjaliści]}}">Psycholog Ostrowiec Św.</a></li>
+              <li><a href="{{[Specjaliści]}}">Psychoterapeuta Ostrowiec Św.</a></li>
+              <li><a href="{{[Specjaliści]}}">Psychiatra Ostrowiec Św.</a></li>
+            </ul>
+          </div>
+
+        {{/with}}
 
         <div class="o-layout__item u-1/1 u-1/2@tablet u-1/4@desktop">
           <h4 class="u-h6 u-margin-bottom-tiny">Kontakt</h4>
