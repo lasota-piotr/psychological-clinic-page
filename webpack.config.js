@@ -20,7 +20,11 @@ module.exports = {
     specialists: './src/js/specialists.js',
     clinics: './src/js/clinics.js',
     contact: './src/js/contact.js',
-    article: './src/js/article.js'
+    article: './src/js/article.js',
+    clinic01: './src/js/clinic-01.js',
+    clinic02: './src/js/clinic-02.js',
+    clinic03: './src/js/clinic-03.js',
+    clinic04: './src/js/clinic-04.js'
   },
   output: {
     // outputPath: '/',
@@ -76,19 +80,19 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Project demo',
-      // minify: {
-      //   collapseWhitespace: true
-      // },
+      title: 'Świętokrzyski Ośrodek Terapii',
+      minify: {
+        collapseWhitespace: true
+      },
       hash: true,
       chunks: ['app', 'landing'],
       template: './src/index.html', // Load a custom template (ejs by default see the FAQ for details)
     }),
     new HtmlWebpackPlugin({
       title: 'Specialiści',
-      // minify: {
-      //   collapseWhitespace: true
-      // },
+      minify: {
+        collapseWhitespace: true
+      },
       hash: true,
       chunks: ['app', 'specialists'],
       filename: 'specialists.html',
@@ -96,9 +100,9 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'Poradnie',
-      // minify: {
-      //   collapseWhitespace: true
-      // },
+      minify: {
+        collapseWhitespace: true
+      },
       hash: true,
       chunks: ['app', 'clinics'],
       filename: 'clinics.html',
@@ -106,9 +110,9 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'Kontakt',
-      // minify: {
-      //   collapseWhitespace: true
-      // },
+      minify: {
+        collapseWhitespace: true
+      },
       hash: true,
       chunks: ['app', 'contact'],
       filename: 'contact.html',
@@ -116,13 +120,53 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'Specjalista',
-      // minify: {
-      //   collapseWhitespace: true
-      // },
+      minify: {
+        collapseWhitespace: true
+      },
       hash: true,
       chunks: ['app', 'article'],
       filename: 'article.html',
       template: './src/article.html',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Poradnia Zdrowia Psychicznego',
+      minify: {
+        collapseWhitespace: true
+      },
+      hash: true,
+      chunks: ['app', 'clinic01'],
+      filename: 'clinic-01.html',
+      template: './src/clinic-01.html',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Poradnia zdrowia psychicznego',
+      minify: {
+        collapseWhitespace: true
+      },
+      hash: true,
+      chunks: ['app', 'clinic02'],
+      filename: 'clinic-02.html',
+      template: './src/clinic-02.html',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Poradnia uzależnień',
+      minify: {
+        collapseWhitespace: true
+      },
+      hash: true,
+      chunks: ['app', 'clinic03'],
+      filename: 'clinic-03.html',
+      template: './src/clinic-03.html',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Zespół leczenia środowiskowego',
+      // minify: {
+      //   collapseWhitespace: true
+      // },
+      hash: true,
+      chunks: ['app', 'clinic04'],
+      filename: 'clinic-04.html',
+      template: './src/clinic-04.html',
     }),
     new ExtractTextPlugin({
       filename: './[name].css',

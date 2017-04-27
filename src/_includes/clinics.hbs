@@ -1,4 +1,4 @@
-<main data-ui-component="Clinics">
+<main data-ui-component="Clinics"  data-page="clinics" class="js-main">
 
   <section class="c-hero c-hero--small" data-ui-component="Page Hero">
 
@@ -22,7 +22,7 @@
     <div class="o-wrapper">
 
       <div class="o-layout o-layout--center">
-
+        
         {{#each clinics}}
 
           <div class="o-layout__item u-1/1 u-1/2@tablet u-margin-bottom-large">
@@ -36,7 +36,7 @@
               </div>
 
               <div class="o-block__body">
-                <h2 class="u-h4">{{name}}</h2>
+                <h2 class="u-h4"><a href="{{link}}">{{name}}</a></h2>
                 <p>{{aboutSummary}}</p>
               </div>
 

@@ -1,9 +1,10 @@
-const clinics = require('../_includes/clinics.hbs');
-import jsonClinics from '../clinics.json';
+import clinics from '../_includes/clinics.hbs';
+import { jsonClinicsWithLinks } from './helpers/jsonClinicsWithLinks';
 
 function renderclinics(jsonData) {
   const clinicsContainer = document.querySelector('#clinics');
   clinicsContainer.innerHTML = clinics(jsonData);
 }
 
-renderclinics(jsonClinics);
+renderclinics(jsonClinicsWithLinks);
+

@@ -1,0 +1,41 @@
+<main data-ui-component="Clinic"  data-page="clinics" class="js-main">
+
+  {{#with clinics.[0]}}
+
+    <section class="c-hero c-hero--small c-hero--center" data-ui-component="Page Hero">
+
+      <div class="o-wrapper c-hero__wrapper">
+
+        <div class="c-hero__content">
+          <h1 class="c-hero__title u-padding-top-huge">
+            {{name}}
+          </h1>
+        </div>
+
+      </div>
+
+    </section>
+
+    <div class="c-panel">
+
+      <div class="o-wrapper">
+
+        <div class="o-layout o-layout--center">
+
+          <div class="o-layout__item u-1/1 u-3/5@desktop">
+
+            <p class="u-text-weight-bold">{{aboutSummary}}</p>
+            {{#each about}}
+              <p>{{this}}</p>
+            {{/each}}
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  {{/with}}
+
+</main>
