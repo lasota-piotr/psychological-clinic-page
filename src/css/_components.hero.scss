@@ -106,3 +106,24 @@ $color-hero-background: $color-brand--light;
   }
 }
 
+/* Test position variants
+   ========================================================================== */
+
+.c-hero--center {
+
+  .c-hero__content {
+    max-width: none;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .c-hero__title {
+    text-align: center;
+  }
+
+  .c-hero__sub-title {
+    text-align: center;
+  }
+
+}
