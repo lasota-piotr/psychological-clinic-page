@@ -24,7 +24,8 @@ module.exports = {
     clinic01: './src/js/clinic-01.js',
     clinic02: './src/js/clinic-02.js',
     clinic03: './src/js/clinic-03.js',
-    clinic04: './src/js/clinic-04.js'
+    clinic04: './src/js/clinic-04.js',
+    eregistration: './src/js/e-registration.js'
   },
   output: {
     // outputPath: '/',
@@ -160,13 +161,23 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'Zespół leczenia środowiskowego',
-      // minify: {
-      //   collapseWhitespace: true
-      // },
+      minify: {
+        collapseWhitespace: true
+      },
       hash: true,
       chunks: ['app', 'clinic04'],
       filename: 'clinic-04.html',
       template: './src/clinic-04.html',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'E-rejestracja',
+      minify: {
+        collapseWhitespace: true
+      },
+      hash: true,
+      chunks: ['app', 'eregistration'],
+      filename: 'e-registration.html',
+      template: './src/e-registration.html',
     }),
     new ExtractTextPlugin({
       filename: './[name].css',
