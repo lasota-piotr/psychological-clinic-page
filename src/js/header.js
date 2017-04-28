@@ -33,9 +33,13 @@ export const pageHeader = function() {
   function highlighActivePageLink() {
     const navLinksElements = document.querySelectorAll('.js-nav-primary__link');
     const mainEl = document.querySelector('.js-main');
-    const currPage = mainEl.dataset.page;
-    const navLinkToHighlight = [...navLinksElements].find(el => el.dataset.page === currPage);
-    navLinkToHighlight.classList.add('c-nav-primary__link--active');
+    try {
+      const currPage = mainEl.dataset.page;
+      const navLinkToHighlight = [...navLinksElements].find(el => el.dataset.page === currPage);
+      navLinkToHighlight.classList.add('c-nav-primary__link--active');
+    } catch (e) {
+      console.info(e.message);
+    }
   }
 
   function menuBtnHandler(e) {
