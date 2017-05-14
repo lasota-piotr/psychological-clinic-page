@@ -37,6 +37,13 @@ export const pageHeader = function() {
       const currPage = mainEl.dataset.page;
       const navLinkToHighlight = [...navLinksElements].find(el => el.dataset.page === currPage);
       navLinkToHighlight.classList.add('c-nav-primary__link--active');
+
+      // Always header is-scrolled if no main page
+      if (currPage !== 'landing') {
+        pageHead.style.transition = 'none';
+        pageHead.classList.add('is-scrolled');
+        document.removeEventListener('scroll', scrollHandler);
+      }
     } catch (e) {
       console.info(e.message);
     }

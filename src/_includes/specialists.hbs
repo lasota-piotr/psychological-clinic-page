@@ -32,7 +32,7 @@
             
             <div class="o-block o-block--left">
 
-              <div class="o-block__img o-crop o-crop--4:3">
+              <div class="o-block__img o-crop o-crop--1:1">
                 <img
                   class="o-crop__content o-crop__content--center o-crop__content--fill"
                   src="{{image}}"
@@ -47,7 +47,7 @@
 
                   {{/each}}
                 </h3>
-                <p class="c-card__content">{{aboutSummary}}</p>
+                <p class="c-card__content">{{{[helpers/cutContent] aboutSummary}}}</p>
               </div>
 
             </div>

@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const isProd = process.argv.indexOf('-p') !== -1; // true or false
@@ -96,8 +97,8 @@ module.exports = {
       },
       hash: true,
       chunks: ['app', 'specialists'],
-      filename: 'specialists.html',
-      template: './src/specialists.html',
+      filename: 'specjalisci.html',
+      template: './src/specjalisci.html',
     }),
     new HtmlWebpackPlugin({
       title: 'Poradnie',
@@ -106,8 +107,8 @@ module.exports = {
       },
       hash: true,
       chunks: ['app', 'clinics'],
-      filename: 'clinics.html',
-      template: './src/clinics.html',
+      filename: 'poradnie.html',
+      template: './src/poradnie.html',
     }),
     new HtmlWebpackPlugin({
       title: 'Kontakt',
@@ -116,8 +117,8 @@ module.exports = {
       },
       hash: true,
       chunks: ['app', 'contact'],
-      filename: 'contact.html',
-      template: './src/contact.html',
+      filename: 'kontakt.html',
+      template: './src/kontakt.html',
     }),
     new HtmlWebpackPlugin({
       title: 'Specjalista',
@@ -136,18 +137,18 @@ module.exports = {
       },
       hash: true,
       chunks: ['app', 'clinic01'],
-      filename: 'clinic-01.html',
-      template: './src/clinic-01.html',
+      filename: 'poradnia-zdrowia-psychicznego.html',
+      template: './src/poradnia-zdrowia-psychicznego.html',
     }),
     new HtmlWebpackPlugin({
-      title: 'Poradnia zdrowia psychicznego',
+      title: 'Poradnia psychologiczna',
       minify: {
         collapseWhitespace: true
       },
       hash: true,
       chunks: ['app', 'clinic02'],
-      filename: 'clinic-02.html',
-      template: './src/clinic-02.html',
+      filename: 'poradnia-psychologiczna.html',
+      template: './src/poradnia-psychologiczna.html',
     }),
     new HtmlWebpackPlugin({
       title: 'Poradnia uzależnień',
@@ -156,8 +157,8 @@ module.exports = {
       },
       hash: true,
       chunks: ['app', 'clinic03'],
-      filename: 'clinic-03.html',
-      template: './src/clinic-03.html',
+      filename: 'poradnia-uzaleznien.html',
+      template: './src/poradnia-uzaleznien.html',
     }),
     new HtmlWebpackPlugin({
       title: 'Zespół leczenia środowiskowego',
@@ -166,8 +167,8 @@ module.exports = {
       },
       hash: true,
       chunks: ['app', 'clinic04'],
-      filename: 'clinic-04.html',
-      template: './src/clinic-04.html',
+      filename: 'zespol-leczenia-srodowiskowego.html',
+      template: './src/zespol-leczenia-srodowiskowego.html',
     }),
     new HtmlWebpackPlugin({
       title: 'E-rejestracja',
@@ -179,6 +180,7 @@ module.exports = {
       filename: 'e-registration.html',
       template: './src/e-registration.html',
     }),
+    new FaviconsWebpackPlugin('./src/images/sot.png'),
     new ExtractTextPlugin({
       filename: './[name].css',
       disable: !isProd

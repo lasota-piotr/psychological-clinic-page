@@ -2,12 +2,12 @@
   "links" :
     {
       "Strona główna"                  : "./",
-      "Poradnie"                       : "clinics.html",
-      "Specjaliści"                    : "specialists.html",
-      "Kontakt"                        : "contact.html",
-      "Poradnia zdrowia psychicznego"  : "clinic-01.html",
-      "Poradnia psychologiczna"        : "clinic-02.html",
-      "Poradnia uzależnień"            : "clinic-03.html",
-      "Zespół leczenia środowiskowego" : "clinic-04.html"
+      "Poradnie"                       : "poradnie.html",
+      "Specjaliści"                    : "specjalisci.html",
+      "Kontakt"                        : "kontakt.html",
+      "Poradnia zdrowia psychicznego"  : "poradnia-zdrowia-psychicznego.html",
+      "Poradnia psychologiczna"        : "poradnia-psychologiczna.html",
+      "Poradnia uzależnień"            : "poradnia-uzaleznien.html",
+      "Zespół leczenia środowiskowego" : "zespol-leczenia-srodowiskowego.html"
    }
 }

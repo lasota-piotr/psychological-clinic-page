@@ -1,39 +1,53 @@
 {
   "specialists" : [
     {
-      "image" : "./images/face-03.jpg",
-      "firstName" : "John",
-      "lastName" : "Doe",
-      "specializations" : ["psycholog", "psychoterapeuta"],
-      "aboutSummary" : "W przeciwieństwie do rozpowszechnionych opinii, Lorem Ipsum nie jest tylko przypadkowym tekstem. Ma ono korzenie w klasycznej łacińskiej literaturze"
-   },
-   {
-      "image" : "./images/face-03.jpg",
+      "image" : "./images/agnieszka-lenartowicz.jpg",
       "firstName" : "Agnieszka",
       "lastName" : "Maj-Lenartowicz",
       "specializations" : ["psychiatra"],
-      "aboutSummary" : "W przeciwieństwie do rozpowszechnionych opinii, Lorem Ipsum nie jest tylko przypadkowym tekstem. Ma ono korzenie w klasycznej łacińskiej literaturze z 45 roku przed Chrystusem, czyli ponad 2000 lat temu! Richard McClintock, wykładowca łaciny na uniwersytecie Hampden-Sydney"
+      "aboutSummary" : "Absolwentka Wydziału Lekarskiego Akademii Medycznej w Białymstoku, specjalista psychiatra. <br>Doświadczenia zdobywała m.in. pracując w Wojewódzkim Specjalistycznym Zespole Opieki Neuropsychiatrycznej w Kielcach oraz w Klinice Psychiatrii Dorosłych Collegium Medicum Uniwersytetu  Jagiellońskiego w Krakowie. <br>Od 2010 roku jest członkiem Kieleckiego Oddziału Polskiego Towarzystwa Psychiatrycznego,  a od 2016 roku członkiem sekcji Psychiatrii Środowiskowej i Rehabilitacji Polskiego Towarzystwa  Psychiatrycznego. <br>Udziela specjalistycznej pomocy w zakresie diagnostyki i leczenia: depresji, zaburzeń lękowych(nerwic), natręctw(OCD), choroby afektywnej dwubiegunowej(CHAD), psychoz (schizofrenii , zaburzeń urojeniowych), zaburzeń i chorób psychicznych wieku podeszłego, zaburzeń psychosomatycznych, uzależnień, zaburzeń odżywiania, zaburzeń snu, zaburzeń psychicznych w kryzysowych sytuacjach życiowych."
    },
    {
-      "image" : "./images/face-03.jpg",
-      "firstName" : "Jan",
-      "lastName" : "Kowalski",
-      "specializations" : ["psycholog", "psychoterapeuta"],
-      "aboutSummary" : "W przeciwieństwie do rozpowszechnionych opinii, Lorem Ipsum nie jest tylko przypadkowym tekstem."
+      "image" : "./images/account.png",
+      "firstName" : "Zbigniew",
+      "lastName" : "Pastuszka ",
+      "specializations" : ["psychiatra"],
+      "aboutSummary" : "Udziela specjalistycznej pomocy w zakresie diagnostyki i leczenia: zaburzeń odżywiania (bulimia, anoreksja), zaburzeń osobowości, zaburzeń pamięci, zaburzeń zachowania, zaburzeń snu, choroby afektywnej dwubiegunowej, depresji, lęków, nerwicy, schizofrenii, uzależnień, zaburzeń emocjonalnych, zaburzeń psychicznych."
    },
    {
-      "image" : "./images/face-03.jpg",
-      "firstName" : "Jan",
-      "lastName" : "Kowalski",
+      "image" : "./images/renata-zagozdzon.jpg",
+      "firstName" : "Renata",
+      "lastName" : "Zagożdżon",
       "specializations" : ["psycholog", "psychoterapeuta"],
-      "aboutSummary" : "W przeciwieństwie do rozpowszechnionych opinii, Lorem Ipsum nie jest tylko przypadkowym tekstem. Ma ono korzenie w klasycznej łacińskiej literaturze z 45 roku przed Chrystusem, czyli ponad 2000 lat temu! Richard McClintock, wykładowca łaciny na uniwersytecie Hampden-Sydney w Virginii, przyjrzał się uważniej jednemu z najbardziej niejasnych słów w Lorem Ipsum"
+      "aboutSummary" : "Psycholog i psychoterapeuta z dziesięcioletnim doświadczeniem w pracy z młodzieżą i osobami dorosłymi. Ukończyła psychologię  w Szkole Wyższej Psychologii Społecznej w Warszawie oraz czteroletnie  szkolenie  w Krakowskim Centrum Psychoterapii Psychodynamicznej.<br>Prowadzi konsultacje i psychoterapię indywidualną młodzieży i osób dorosłych. <br>Doświadczenie psychoterapeutyczne zdobywała m.in. w pracy z młodzieżą w Zakładzie Poprawczym oraz prowadząc prywatną praktykę terapeutyczną. <br>Pracuje z osobami, które przeżywają: trudności w relacjach, kryzysy, stres, problemy w rozwoju osobistym i zawodowym, kłopoty związane z brakiem satysfakcji życiowej, depresję i smutek, niepokój, lęki i fobie, nerwice, czynności i myśli natrętne, chwiejność emocjonalną, zaburzenia osobowości, dolegliwości psychosomatyczne, problemy ze snem, problemy ogólne."
    },
    {
-      "image" : "./images/face-03.jpg",
-      "firstName" : "Jan",
-      "lastName" : "Kowalski",
+      "image" : "./images/ilona-lasota.jpg",
+      "firstName" : "Ilona",
+      "lastName" : "Lasota",
       "specializations" : ["psycholog", "psychoterapeuta"],
-      "aboutSummary" : "W przeciwieństwie do rozpowszechnionych opinii, Lorem Ipsum nie jest tylko przypadkowym tekstem. Ma ono korzenie w klasycznej łacińskiej literaturze z 45 roku przed Chrystusem, czyli ponad 2000 lat temu! Richard McClintock, wykładowca łaciny na uniwersytecie Hampden-Sydney w Virginii, przyjrzał się uważniej jednemu z najbardziej niejasnych słów w Lorem Ipsum"
+      "aboutSummary" : "Psycholog i psychoterapeuta poznawczo-behawioralny w trakcie procesu certyfikacji. Ukończyła studia magisterskie na kierunku psychologia na Uniwersytecie Warszawskim ze specjalizacją terapia rodzin i małżeństw. Obecnie jest w trakcie procesu certyfikacji  w zakresie terapii poznawczo-behawioralnej w Szkole Psychoterapii Centrum CBT w Warszawie, rekomendowanej przez Polskie Towarzystwo Terapii Poznawczej i Behawioralnej (PTTPB). Doświadczenie terapeutyczne zdobywała m.in. w Poradni Rodzinnej Dzielnicy Bemowo oraz pracując w Poradniach Zdrowia Psychicznego w Warszawie. <br>Prowadzi konsultacje, porady psychologiczne oraz psychoterapię indywidualną i rodzinną dla osób w kryzysie, doświadczających problemów w relacjach, zmagających się z nadmiernym lękiem (nerwicami), depresją, niskim poczuciem wartości oraz innymi trudnościami doświadczanymi w życiu codziennym. Pracuję z młodzieżą i osobami dorosłymi."
+   },
+   {
+      "image" : "./images/account.png",
+      "firstName" : "Katarzyna",
+      "lastName" : "Kutera",
+      "specializations" : ["psycholog", "terapeuta uzależnień"],
+      "aboutSummary" : "Psycholog oraz certyfikowany terapeuta uzależnień. <br>Prowadzi psychoterapię indywidualną oraz grupową dla osób uzależnionych i współuzależnionych. Zajmuje się poradnictwem psychologicznym pomagając osobom doświadczającym nadmiernego stresu, mającym problemy z lękiem, nastrojem, relacjami międzyludzkimi i rozmaitymi kryzysami życiowymi. Pracuje z młodzieżą i osobami dorosłymi."
+   },
+   {
+      "image" : "./images/account.png",
+      "firstName" : "Jolanta",
+      "lastName" : "Majchrzyk",
+      "specializations" : ["Terapeuta uzależnień"],
+      "aboutSummary" : "Terapeuta uzależnień w trakcie procesu certyfikacji. Zajmuje się prowadzeniem konsultacji oraz pracą terapeutyczną z osobami uzależnionymi oraz rodziną i bliskimi osób uzależnionych. Prowadzi trapię indywidualną i grupową."
+   },
+   {
+      "image" : "./images/account.png",
+      "firstName" : "Łukasz",
+      "lastName" : "Trela",
+      "specializations" : ["Terapeuta uzależnień"],
+      "aboutSummary" : "Certyfikowany terapeuta uzależnień. Zajmuje się diagnostyką oraz pracą terapeutyczną z osobami uzależnionymi i współuzależnionymi. Prowadzi konsultacje, terapię indywidualną oraz grupową."
    }
   ]
 }
