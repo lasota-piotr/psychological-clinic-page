@@ -69,6 +69,7 @@
 
   </div>
 
+  {{#with links}}
 
   <div class="c-panel c-panel--light c-panel--flush">
 
@@ -88,7 +89,7 @@
               <p>
                 Jesteśmy zespołem psychiatrów, psychologów oraz terapeutów. Oferujemy konsultacje psychiatryczne i psychologiczne. Prowadzimy psychoterapię indywidualną, grupową, rodzinną oraz wizyty środowiskowe. Pomagamy osobom poszukującym: wsparcia, porady i rozmowy.
               </p>
-              <a href="specialists.html" class="c-btn c-btn--primary c-btn--ghost">
+              <a href="{{[Specjaliści]}}" class="c-btn c-btn--primary c-btn--ghost">
                 Zobacz cały zespół
               </a>
             </div>
@@ -116,7 +117,7 @@
             <h3 class="c-cta__header">
               Zapraszamy do kontaktu w celu umówienia wizyty
             </h3>
-            <a href="contact.html" class="c-btn  c-btn--primary">Umów się na wizytę</a>
+            <a href="{{[Kontakt]}}" class="c-btn  c-btn--primary">Umów się na wizytę</a>
 
           </div>
 
@@ -128,4 +129,5 @@
 
   </section>
 
+  {{/with}}
 </main>
