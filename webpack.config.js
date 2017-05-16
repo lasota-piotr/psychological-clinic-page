@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const isProd = process.argv.indexOf('-p') !== -1; // true or false
 const cssDev = ['style-loader', 'css-loader', 'sass-loader'];
@@ -78,11 +79,15 @@ module.exports = {
     compress: true,
     hot: true,
     stats: 'errors-only',
+    port: 8001
     // open: true
   },
   plugins: [
+    new CopyWebpackPlugin([
+      { from: './src/prod-files' }
+    ]),
     new HtmlWebpackPlugin({
-      title: 'Świętokrzyski Ośrodek Terapii',
+      title: 'Świętokrzyski Ośrodek Terapii - Psychiatra, Psycholog - Ostrowiec Św.',
       minify: {
         collapseWhitespace: true
       },
@@ -91,7 +96,7 @@ module.exports = {
       template: './src/index.html', // Load a custom template (ejs by default see the FAQ for details)
     }),
     new HtmlWebpackPlugin({
-      title: 'Specialiści',
+      title: 'Świętokrzyski Ośrodek Terapii - Specialiści',
       minify: {
         collapseWhitespace: true
       },
@@ -101,7 +106,7 @@ module.exports = {
       template: './src/specjalisci.html',
     }),
     new HtmlWebpackPlugin({
-      title: 'Poradnie',
+      title: 'Świętokrzyski Ośrodek Terapii - Poradnie',
       minify: {
         collapseWhitespace: true
       },
@@ -111,7 +116,7 @@ module.exports = {
       template: './src/poradnie.html',
     }),
     new HtmlWebpackPlugin({
-      title: 'Kontakt',
+      title: 'Świętokrzyski Ośrodek Terapii - Kontakt',
       minify: {
         collapseWhitespace: true
       },
@@ -121,7 +126,7 @@ module.exports = {
       template: './src/kontakt.html',
     }),
     new HtmlWebpackPlugin({
-      title: 'Specjalista',
+      title: 'Świętokrzyski Ośrodek Terapii - Specjalista',
       minify: {
         collapseWhitespace: true
       },
@@ -131,7 +136,7 @@ module.exports = {
       template: './src/article.html',
     }),
     new HtmlWebpackPlugin({
-      title: 'Poradnia Zdrowia Psychicznego',
+      title: 'Świętokrzyski Ośrodek Terapii - Poradnia Zdrowia Psychicznego',
       minify: {
         collapseWhitespace: true
       },
@@ -141,7 +146,7 @@ module.exports = {
       template: './src/poradnia-zdrowia-psychicznego.html',
     }),
     new HtmlWebpackPlugin({
-      title: 'Poradnia psychologiczna',
+      title: 'Świętokrzyski Ośrodek Terapii - Poradnia psychologiczna',
       minify: {
         collapseWhitespace: true
       },
@@ -151,7 +156,7 @@ module.exports = {
       template: './src/poradnia-psychologiczna.html',
     }),
     new HtmlWebpackPlugin({
-      title: 'Poradnia uzależnień',
+      title: 'Świętokrzyski Ośrodek Terapii - Poradnia uzależnień',
       minify: {
         collapseWhitespace: true
       },
@@ -161,7 +166,7 @@ module.exports = {
       template: './src/poradnia-uzaleznien.html',
     }),
     new HtmlWebpackPlugin({
-      title: 'Zespół leczenia środowiskowego',
+      title: 'Świętokrzyski Ośrodek Terapii - Zespół leczenia środowiskowego',
       minify: {
         collapseWhitespace: true
       },
@@ -171,7 +176,7 @@ module.exports = {
       template: './src/zespol-leczenia-srodowiskowego.html',
     }),
     new HtmlWebpackPlugin({
-      title: 'E-rejestracja',
+      title: 'Świętokrzyski Ośrodek Terapii E-rejestracja',
       minify: {
         collapseWhitespace: true
       },
