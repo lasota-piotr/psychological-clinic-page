@@ -1,10 +1,10 @@
 import clinics from '../_includes/clinics.hbs';
-import { jsonClinicsWithLinks } from './helpers/jsonClinicsWithLinks';
+import jsonClinics from '../clinics.json';
 
 function renderclinics(jsonData) {
   const clinicsContainer = document.querySelector('#clinics');
   clinicsContainer.innerHTML = clinics(jsonData);
 }
 
-renderclinics(jsonClinicsWithLinks);
+renderclinics(jsonClinics);
 

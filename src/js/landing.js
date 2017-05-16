@@ -1,7 +1,9 @@
 require('smoothscroll-polyfill').polyfill();
 const landing = require('../_includes/landing.hbs');
 import linksJson from '../links.json';
-import { jsonClinicsWithLinks } from './helpers/jsonClinicsWithLinks';
+import jsonContact from '../contact.json';
+import jsonClinics from '../clinics.json';
+
 
 
 function renderLanding(jsonData) {
@@ -9,7 +11,7 @@ function renderLanding(jsonData) {
   landingContainer.innerHTML = landing(jsonData);
 }
 
-renderLanding(Object.assign(linksJson, jsonClinicsWithLinks));
+renderLanding(Object.assign(jsonContact, linksJson, jsonClinics));
 
 const clinicsBtnInit = () => {
   function clinicsBtnHandler(e) {
