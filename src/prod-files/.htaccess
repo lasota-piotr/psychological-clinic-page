@@ -85,7 +85,7 @@
 # Customize what Apache returns to the client in case of an error.
 # https://httpd.apache.org/docs/current/mod/core.html#errordocument
 
-ErrorDocument 404 /404.html
+ErrorDocument 404 /404
 
 # ----------------------------------------------------------------------
 # | Error prevention                                                   |
@@ -335,7 +335,7 @@ AddDefaultCharset utf-8
     # RewriteOptions <options>
 
     # (6)
-    RewriteCond %{HTTPS} =on
+    RewriteCond %{HTTPS} =off
     RewriteRule ^ - [env=proto:https]
     RewriteCond %{HTTPS} !=on
     RewriteRule ^ - [env=proto:http]
@@ -985,3 +985,9 @@ FileETag None
 
 # Removes html extansion
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Redirects
+Redirect 301 /leczenie-uzaleznien /poradnia-uzaleznien
+Redirect 301 /leczenie-srodowiskowe /zespol-leczenia-srodowiskowego
+RewriteRule ^zakladki.*$ / [R=301,L]
+RewriteRule ^component.*$ / [R=301,L]
