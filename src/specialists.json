@@ -8,7 +8,7 @@
       "aboutSummary" : "Absolwentka Wydziału Lekarskiego Akademii Medycznej w Białymstoku, specjalista psychiatra. <br>Doświadczenia zdobywała m.in. pracując w Wojewódzkim Specjalistycznym Zespole Opieki Neuropsychiatrycznej w Kielcach oraz w Klinice Psychiatrii Dorosłych Collegium Medicum Uniwersytetu  Jagiellońskiego w Krakowie. <br>Od 2010 roku jest członkiem Kieleckiego Oddziału Polskiego Towarzystwa Psychiatrycznego,  a od 2016 roku członkiem sekcji Psychiatrii Środowiskowej i Rehabilitacji Polskiego Towarzystwa  Psychiatrycznego. <br>Udziela specjalistycznej pomocy w zakresie diagnostyki i leczenia: depresji, zaburzeń lękowych(nerwic), natręctw(OCD), choroby afektywnej dwubiegunowej(CHAD), psychoz (schizofrenii , zaburzeń urojeniowych), zaburzeń i chorób psychicznych wieku podeszłego, zaburzeń psychosomatycznych, uzależnień, zaburzeń odżywiania, zaburzeń snu, zaburzeń psychicznych w kryzysowych sytuacjach życiowych."
    },
    {
-      "image" : "./images/account.png",
+      "image" : "./images/zbigniew-pastuszka.jpg",
       "firstName" : "Zbigniew",
       "lastName" : "Pastuszka ",
       "specializations" : ["psychiatra"],
@@ -36,14 +36,14 @@
       "aboutSummary" : "Psycholog oraz certyfikowany terapeuta uzależnień. <br>Prowadzi psychoterapię indywidualną oraz grupową dla osób uzależnionych i współuzależnionych. Zajmuje się poradnictwem psychologicznym pomagając osobom doświadczającym nadmiernego stresu, mającym problemy z lękiem, nastrojem, relacjami międzyludzkimi i rozmaitymi kryzysami życiowymi. Pracuje z młodzieżą i osobami dorosłymi."
    },
    {
-      "image" : "./images/account.png",
+      "image" : "./images/jolanta-majchrzyk.jpg",
       "firstName" : "Jolanta",
       "lastName" : "Majchrzyk",
       "specializations" : ["Terapeuta uzależnień"],
       "aboutSummary" : "Terapeuta uzależnień w trakcie procesu certyfikacji. Zajmuje się prowadzeniem konsultacji oraz pracą terapeutyczną z osobami uzależnionymi oraz rodziną i bliskimi osób uzależnionych. Prowadzi trapię indywidualną i grupową."
    },
    {
-      "image" : "./images/account.png",
+      "image" : "./images/lukasz-trela.jpg",
       "firstName" : "Łukasz",
       "lastName" : "Trela",
       "specializations" : ["Terapeuta uzależnień"],
