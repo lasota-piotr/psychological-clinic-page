@@ -1,3 +1,4 @@
 *.log
+.idea/
 .jshintrc
 node_modules/
