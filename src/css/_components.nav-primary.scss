@@ -61,7 +61,7 @@ $nav-primary-element-height: 30px;
   .c-nav-primary__menu-btn-wrapper {
     position: absolute;
     left: 0;
-    top: $unit;
+    top: 18px;
     transform: translateX(-140%);
     transition: transform 0.1s;
     transition-delay: 0.1s;
