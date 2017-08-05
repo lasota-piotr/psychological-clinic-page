@@ -64,3 +64,9 @@
     padding: $inuit-global-spacing-unit-large;
   }
 }
+
+.o-box--flush\@tablet {
+  @include mq($from: tablet) {
+    padding: 0;
+  }
+}
