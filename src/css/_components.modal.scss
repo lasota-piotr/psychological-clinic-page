@@ -1,0 +1,135 @@
+/* ==========================================================================
+   #MODAL
+   ========================================================================== */
+
+/**
+ * Modal
+ */
+
+
+.c-modal {
+  display: none;
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.2s, z-index 0s 0.2s;
+
+  overflow: hidden;
+  overflow-y: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  font-size: 0;
+  text-align: center;
+
+  .has-loaded-modal & {
+    display: block;
+  }
+
+  &:before {
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+    content: "";
+  }
+
+  .has-visible-modal & {
+    z-index: 11;
+    opacity: 1;
+    transition: opacity 0.2s;
+  }
+}
+  .c-modal__container {
+    display: inline-flex;
+    position: relative;
+    vertical-align: middle;
+    white-space: normal;
+    padding: $unit-small;
+    height: 100%;
+    @include font-size(16px);
+    text-align: left;
+
+    .c-modal\@tablet & {
+      @include mq($from: tablet) {
+        width: 45rem;
+        height: 35rem;
+      }
+    }
+  }
+
+  .c-modal__inner {
+    position: relative;
+    overflow: hidden;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #fff;
+    z-index: -1;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.2s, transform 0.2s, z-index 0s 0.2s;
+    min-height: 90%;
+
+    .has-visible-modal & {
+      z-index: 11;
+      opacity: 1;
+      transform: scale(1);
+      transition: opacity 0.2s, transform 0.2s;
+    }
+
+    .c-modal\@tablet & {
+      @include mq($from: tablet) {
+
+      }
+    }
+  }
+
+  .c-modal__close-btn {
+    position: absolute;
+    z-index: 12;
+    right: $unit;
+    top: $unit;
+    width: 25px;
+    height: 25px;
+    @include font-size(25px, 1);
+    cursor: pointer;
+    color: $color-gray--light;
+    text-shadow: 0 0 5px #000;
+
+    .c-modal\@tablet & {
+      @include mq($from: tablet) {
+        top: -$unit;
+        right: -$unit;
+      }
+    }
+  }
+
+  .has-visible-modal {
+    //overflow: hidden;
+    //position: fixed;
+  }
+
+  .c-modal__img {
+    .c-modal\@tablet & {
+      @include mq($from: tablet) {
+
+      }
+    }
+  }
+
+  .c-modal__body {
+    @include font-size(16px, 1.5);
+
+    .c-modal\@tablet & {
+      @include mq($from: tablet) {
+        @include font-size(19px, 1.5);
+      }
+    }
+  }

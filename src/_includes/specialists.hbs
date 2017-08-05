@@ -40,20 +40,60 @@
               </div>
 
               <div class="o-block__body">
-                <h2 class="c-card__title">{{firstName}} {{lastName}}</h2>
+                <h2 class="c-card__title u-text-weight-regular">{{firstName}} {{lastName}}</h2>
                 <h3 class="c-card__subtitle">
                   {{#each specializations}}
                     {{this}}{{#unless @last}}, {{/unless}}
-
                   {{/each}}
                 </h3>
                 <p class="c-card__content">{{{[helpers/cutContent] aboutSummary}}}</p>
-              </div>
+                <a href="#modal-{{@index}}" data-modal-open>+ więcej</a>
+                <div id="modal-{{@index}}" style="display:none">
+                  <div class="o-layout__item u-1/1 u-1/2@tablet">
+                    <div class="o-crop o-crop--1:1 c-modal__img">
+                      <img
+                        class="o-crop__content o-crop__content--center o-crop__content--fill"
+                        src="{{image}}"
+                        alt="{{firstName}} {{lastName}}"
+                      >
+                    </div>
+                  </div>
 
+                  <div class="o-layout__item u-1/1 u-1/2@tablet">
+                    <div class="o-box o-box--small">
+                      <h2
+                        class="u-h3 u-margin-bottom-tiny u-text-weight-regular">{{firstName}} {{lastName}}</h2>
+                      <h3 class="u-h4 u-text-weight-light">
+                        {{#each specializations}}
+                          {{this}}{{#unless @last}}, {{/unless}}
+                        {{/each}}
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="o-layout__item u-1/1">
+                    <div class="o-box o-box--small o-box--normal@tablet">
+                      <p class="c-modal__body">{{{aboutSummary}}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
           </article>
         {{/each}}
+        <div class="c-modal c-modal@tablet js-modal">
+
+          <div class="c-modal__container">
+            <span class="c-modal__close-btn
+                         o-flex o-flex--align-items-center o-flex--justify-content-center"
+                  data-modal-close>
+              ×
+            </span>
+            <div class="c-modal__inner js-modal__inner">
+              <div class="c-modal__content js-modal__content o-layout o-layout--bottom"></div>
+            </div>
+          </div>
+        </div>
 
       </section>
 
